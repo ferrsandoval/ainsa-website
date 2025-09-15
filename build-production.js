@@ -96,3 +96,4 @@ function countFiles(dirPath) {
   
   return count;
 }
+

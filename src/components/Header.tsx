@@ -44,7 +44,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
   }, []);
 
   return (
-    <header className="w-full bg-background/95 backdrop-blur-md sticky top-0 z-50 border-b border-border/20">
+    <header className="w-full bg-ainsa-white/95 dark:bg-ainsa-black/95 backdrop-blur-md sticky top-0 z-50 border-b border-ainsa-gray/20">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20 lg:h-24">
           
@@ -88,13 +88,13 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: -10, scale: 0.95 }}
                     transition={{ duration: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
-                    className="absolute top-full left-0 mt-2 w-80 bg-background/95 dark:bg-background/90 backdrop-blur-sm border border-border/30 rounded-xl shadow-xl py-4 z-50"
+                    className="absolute top-full left-0 mt-2 w-80 bg-ainsa-white/95 dark:bg-ainsa-black/90 backdrop-blur-sm border border-ainsa-gray/30 rounded-xl shadow-xl py-4 z-50"
                     onMouseEnter={() => setIsProductsOpen(true)}
                     onMouseLeave={() => setIsProductsOpen(false)}
                   >
                     <motion.button 
                       onClick={() => onNavigate('productos')}
-                      className="block w-full text-left px-6 py-3 text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors border-b border-border/20"
+                      className="block w-full text-left px-6 py-3 text-ainsa-gray hover:text-ainsa-black dark:hover:text-ainsa-white hover:bg-ainsa-gray/10 transition-colors border-b border-ainsa-gray/20"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 600 }}
                       whileHover={{ x: 4 }}
                       transition={{ duration: 0.2 }}
@@ -103,7 +103,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
                     </motion.button>
                     <motion.button 
                       onClick={() => onNavigate('aceros-inoxidables')}
-                      className="block w-full text-left px-6 py-3 text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
+                      className="block w-full text-left px-6 py-3 text-ainsa-gray hover:text-ainsa-black dark:hover:text-ainsa-white hover:bg-ainsa-gray/10 transition-colors"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                       whileHover={{ x: 4 }}
                       transition={{ duration: 0.2 }}
@@ -112,7 +112,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
                     </motion.button>
                     <motion.button 
                       onClick={() => onNavigate('aluminio')}
-                      className="block w-full text-left px-6 py-3 text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
+                      className="block w-full text-left px-6 py-3 text-ainsa-gray hover:text-ainsa-black dark:hover:text-ainsa-white hover:bg-ainsa-gray/10 transition-colors"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                       whileHover={{ x: 4 }}
                       transition={{ duration: 0.2 }}
@@ -121,7 +121,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
                     </motion.button>
                     <motion.button 
                       onClick={() => onNavigate('metales-no-ferrosos')}
-                      className="block w-full text-left px-6 py-3 text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
+                      className="block w-full text-left px-6 py-3 text-ainsa-gray hover:text-ainsa-black dark:hover:text-ainsa-white hover:bg-ainsa-gray/10 transition-colors"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                       whileHover={{ x: 4 }}
                       transition={{ duration: 0.2 }}
@@ -130,7 +130,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
                     </motion.button>
                     <motion.button 
                       onClick={() => onNavigate('aceros-carbones-especiales')}
-                      className="block w-full text-left px-6 py-3 text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
+                      className="block w-full text-left px-6 py-3 text-ainsa-gray hover:text-ainsa-black dark:hover:text-ainsa-white hover:bg-ainsa-gray/10 transition-colors"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                       whileHover={{ x: 4 }}
                       transition={{ duration: 0.2 }}
@@ -139,7 +139,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
                     </motion.button>
                     <motion.button 
                       onClick={() => onNavigate('placas-antidesgaste')}
-                      className="block w-full text-left px-6 py-3 text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
+                      className="block w-full text-left px-6 py-3 text-ainsa-gray hover:text-ainsa-black dark:hover:text-ainsa-white hover:bg-ainsa-gray/10 transition-colors"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                       whileHover={{ x: 4 }}
                       transition={{ duration: 0.2 }}
@@ -148,7 +148,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
                     </motion.button>
                     <motion.button 
                       onClick={() => onNavigate('paneles-acp')}
-                      className="block w-full text-left px-6 py-3 text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
+                      className="block w-full text-left px-6 py-3 text-ainsa-gray hover:text-ainsa-black dark:hover:text-ainsa-white hover:bg-ainsa-gray/10 transition-colors"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                       whileHover={{ x: 4 }}
                       transition={{ duration: 0.2 }}
@@ -157,7 +157,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
                     </motion.button>
                     <motion.button 
                       onClick={() => onNavigate('consumibles-abrasivos')}
-                      className="block w-full text-left px-6 py-3 text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
+                      className="block w-full text-left px-6 py-3 text-ainsa-gray hover:text-ainsa-black dark:hover:text-ainsa-white hover:bg-ainsa-gray/10 transition-colors"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                       whileHover={{ x: 4 }}
                       transition={{ duration: 0.2 }}
@@ -166,7 +166,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
                     </motion.button>
                     <motion.button 
                       onClick={() => onNavigate('soluciones-irving')}
-                      className="block w-full text-left px-6 py-3 text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
+                      className="block w-full text-left px-6 py-3 text-ainsa-gray hover:text-ainsa-black dark:hover:text-ainsa-white hover:bg-ainsa-gray/10 transition-colors"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                       whileHover={{ x: 4 }}
                       transition={{ duration: 0.2 }}

@@ -156,3 +156,4 @@ Si necesitas ayuda con la generación de favicons:
 ---
 
 > **Nota**: Una vez generados todos los archivos, el favicon estará completamente implementado y funcionando en todos los dispositivos y navegadores.
+

@@ -41,7 +41,7 @@ export function Footer({ onNavigate }: FooterProps = {}) {
   };
 
   return (
-    <footer className="bg-background border-t border-border/30">
+    <footer className="bg-ainsa-white dark:bg-ainsa-black border-t border-ainsa-gray/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-12">
         {/* Main footer content */}
         <div className="py-16 lg:py-20">
@@ -55,7 +55,7 @@ export function Footer({ onNavigate }: FooterProps = {}) {
                 className="h-12 lg:h-14 w-auto mb-6"
               />
               <p 
-                className="text-muted-foreground leading-relaxed mb-6"
+                className="text-ainsa-gray leading-relaxed mb-6"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 Empresa mexicana especializada en la distribución de materiales, tubería, conexiones y accesorios de acero inoxidable para aplicaciones sanitarias, industriales y ornamentales.
@@ -63,7 +63,7 @@ export function Footer({ onNavigate }: FooterProps = {}) {
               
               {/* Contact Quick Info */}
               <div className="space-y-3">
-                <div className="flex items-center space-x-3 text-muted-foreground">
+                <div className="flex items-center space-x-3 text-ainsa-gray">
                   <MapPin className="w-4 h-4 text-accent flex-shrink-0" />
                   <span 
                     className="text-sm"
@@ -72,7 +72,7 @@ export function Footer({ onNavigate }: FooterProps = {}) {
                     Tlaxcala 328, Hermosillo, Sonora, México
                   </span>
                 </div>
-                <div className="flex items-center space-x-3 text-muted-foreground">
+                <div className="flex items-center space-x-3 text-ainsa-gray">
                   <Phone className="w-4 h-4 text-accent flex-shrink-0" />
                   <span 
                     className="text-sm"
@@ -81,11 +81,11 @@ export function Footer({ onNavigate }: FooterProps = {}) {
                     662-438-5634 | 662-170-2822 | 662-496-8802 | 662-419-9080
                   </span>
                 </div>
-                <div className="flex items-center space-x-3 text-muted-foreground">
+                <div className="flex items-center space-x-3 text-ainsa-gray">
                   <Mail className="w-4 h-4 text-accent flex-shrink-0" />
                   <a 
                     href="mailto:ventas@inoxidablesainsa.mx"
-                    className="text-sm hover:text-foreground transition-colors"
+                    className="text-sm hover:text-ainsa-black dark:text-ainsa-white transition-colors"
                     style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                   >
                     ventas@inoxidablesainsa.mx
@@ -97,7 +97,7 @@ export function Footer({ onNavigate }: FooterProps = {}) {
             {/* Navigation */}
             <div>
               <h4 
-                className="caption text-foreground mb-6"
+                className="caption text-ainsa-black dark:text-ainsa-white mb-6"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
               >
                 Navegación
@@ -105,35 +105,35 @@ export function Footer({ onNavigate }: FooterProps = {}) {
               <nav className="space-y-4">
                 <button 
                   onClick={() => handleNavigation('home')}
-                  className="block text-muted-foreground hover:text-foreground transition-colors text-left"
+                  className="block text-ainsa-gray hover:text-ainsa-black dark:text-ainsa-white transition-colors text-left"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   Inicio
                 </button>
                 <button 
                   onClick={() => handleNavigation('productos')}
-                  className="block text-muted-foreground hover:text-foreground transition-colors text-left"
+                  className="block text-ainsa-gray hover:text-ainsa-black dark:text-ainsa-white transition-colors text-left"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   Productos
                 </button>
                 <button 
                   onClick={() => handleNavigation('por-que-inoxidable')}
-                  className="block text-muted-foreground hover:text-foreground transition-colors text-left"
+                  className="block text-ainsa-gray hover:text-ainsa-black dark:text-ainsa-white transition-colors text-left"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   ¿Por qué Inoxidable?
                 </button>
                 <button 
                   onClick={() => handleNavigation('nosotros')}
-                  className="block text-muted-foreground hover:text-foreground transition-colors text-left"
+                  className="block text-ainsa-gray hover:text-ainsa-black dark:text-ainsa-white transition-colors text-left"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   Nosotros
                 </button>
                 <button 
                   onClick={() => handleNavigation('contacto')}
-                  className="block text-muted-foreground hover:text-foreground transition-colors text-left"
+                  className="block text-ainsa-gray hover:text-ainsa-black dark:text-ainsa-white transition-colors text-left"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   Contacto
@@ -144,7 +144,7 @@ export function Footer({ onNavigate }: FooterProps = {}) {
             {/* Productos */}
             <div>
               <h4 
-                className="caption text-foreground mb-6"
+                className="caption text-ainsa-black dark:text-ainsa-white mb-6"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
               >
                 Productos
@@ -152,28 +152,28 @@ export function Footer({ onNavigate }: FooterProps = {}) {
               <nav className="space-y-4">
                 <button 
                   onClick={() => handleNavigation('aceros-inoxidables')}
-                  className="block text-muted-foreground hover:text-foreground transition-colors text-left"
+                  className="block text-ainsa-gray hover:text-ainsa-black dark:text-ainsa-white transition-colors text-left"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   Aceros Inoxidables
                 </button>
                 <button 
                   onClick={() => handleNavigation('aleaciones-especiales')}
-                  className="block text-muted-foreground hover:text-foreground transition-colors text-left"
+                  className="block text-ainsa-gray hover:text-ainsa-black dark:text-ainsa-white transition-colors text-left"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   Aleaciones Especiales
                 </button>
                 <button 
                   onClick={() => handleNavigation('placas-laminas')}
-                  className="block text-muted-foreground hover:text-foreground transition-colors text-left"
+                  className="block text-ainsa-gray hover:text-ainsa-black dark:text-ainsa-white transition-colors text-left"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   Placas y Láminas
                 </button>
                 <button 
                   onClick={() => handleNavigation('tubos-perfiles')}
-                  className="block text-muted-foreground hover:text-foreground transition-colors text-left"
+                  className="block text-ainsa-gray hover:text-ainsa-black dark:text-ainsa-white transition-colors text-left"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   Tubos y Perfiles
@@ -188,13 +188,13 @@ export function Footer({ onNavigate }: FooterProps = {}) {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0">
             <div className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-1">
               <p 
-                className="text-muted-foreground text-sm"
+                className="text-ainsa-gray text-sm"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 © 2025 AINSA Acero Inoxidable.
               </p>
               <p 
-                className="text-muted-foreground text-sm"
+                className="text-ainsa-gray text-sm"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 Todos los derechos reservados.
@@ -203,7 +203,7 @@ export function Footer({ onNavigate }: FooterProps = {}) {
             
             <div className="flex items-center space-x-2">
               <span 
-                className="text-muted-foreground text-sm"
+                className="text-ainsa-gray text-sm"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 Design by
@@ -219,7 +219,7 @@ export function Footer({ onNavigate }: FooterProps = {}) {
                   alt="EasyDevs" 
                   className="h-7 w-auto"
                 />
-                <ExternalLink className="w-3 h-3 text-muted-foreground" />
+                <ExternalLink className="w-3 h-3 text-ainsa-gray" />
               </a>
             </div>
           </div>

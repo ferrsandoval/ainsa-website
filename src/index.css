@@ -99,6 +99,19 @@
     --color-gray-900: oklch(.21 .034 264.665);
     --color-black: #000;
     --color-white: #fff;
+    
+    /* Paleta personalizada AINSA */
+    --color-ainsa-gray: #a7a9ac;
+    --color-ainsa-white: #ffffff;
+    --color-ainsa-black: #000000;
+    --color-ainsa-red: #a32714;
+    
+    /* Variables de tema */
+    --color-primary: var(--color-ainsa-gray);
+    --color-accent: var(--color-ainsa-red);
+    --color-background: var(--color-ainsa-white);
+    --color-text: var(--color-ainsa-black);
+    --color-text-light: var(--color-ainsa-gray);
     --spacing: .25rem;
     --container-sm: 24rem;
     --container-md: 28rem;
@@ -165,6 +178,15 @@
     --default-mono-font-feature-settings: var(--font-mono--font-feature-settings);
     --default-mono-font-variation-settings: var(--font-mono--font-variation-settings);
     --color-border: var(--border);
+  }
+  
+  /* Tema oscuro */
+  .dark {
+    --color-primary: var(--color-ainsa-gray);
+    --color-accent: var(--color-ainsa-red);
+    --color-background: var(--color-ainsa-black);
+    --color-text: var(--color-ainsa-white);
+    --color-text-light: var(--color-ainsa-gray);
   }
 }
 

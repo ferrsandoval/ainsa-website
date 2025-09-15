@@ -42,8 +42,8 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
         />
         
         {/* Overlay gradients - más sutil para destacar el logo */}
-        <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/85 to-background/95 dark:from-background/95 dark:via-background/85 dark:to-background/95" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-transparent to-background/70 dark:from-background/70 dark:via-transparent dark:to-background/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-ainsa-white/95 via-ainsa-white/85 to-ainsa-white/95 dark:from-ainsa-black/95 dark:via-ainsa-black/85 dark:to-ainsa-black/95" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ainsa-white/70 via-transparent to-ainsa-white/70 dark:from-ainsa-black/70 dark:via-transparent dark:to-ainsa-black/70" />
       </div>
 
       {/* Content */}
@@ -104,7 +104,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <AnimatedCTAButton 
-              className="bg-foreground hover:bg-foreground/90 text-background px-6 py-3 sm:px-8 sm:py-4 h-auto font-medium text-sm sm:text-base rounded-xl shadow-lg min-w-[160px] sm:min-w-[180px] justify-center"
+              className="bg-ainsa-black hover:bg-ainsa-black/90 text-ainsa-white px-6 py-3 sm:px-8 sm:py-4 h-auto font-medium text-sm sm:text-base rounded-xl shadow-lg min-w-[160px] sm:min-w-[180px] justify-center"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               onClick={() => onNavigate?.('contacto')}
             >
@@ -122,7 +122,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
             >
               <button
                 onClick={() => window.open('https://api.whatsapp.com/send/?phone=526624968802&text=Hola,%20quisiera%20obtener%20más%20información%20sobre%20sus%20productos%20y%20servicios.&type=phone_number&app_absent=0', '_blank')}
-                className="bg-green-600 hover:bg-green-700 text-white font-medium px-6 py-3 sm:px-8 sm:py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center space-x-2 whitespace-nowrap min-w-[160px] sm:min-w-[180px] justify-center"
+                className="bg-ainsa-red hover:bg-ainsa-red/90 text-ainsa-white font-medium px-6 py-3 sm:px-8 sm:py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center space-x-2 whitespace-nowrap min-w-[160px] sm:min-w-[180px] justify-center"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24">

@@ -29,7 +29,7 @@ export function NotFoundPage({ onNavigate }: NotFoundPageProps) {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 flex items-center justify-center px-4">
+    <div className="min-h-screen bg-gradient-to-br from-ainsa-white to-ainsa-gray/20 dark:from-ainsa-black dark:to-ainsa-gray/20 flex items-center justify-center px-4">
       <div className="max-w-4xl mx-auto text-center">
         {/* 404 Animation */}
         <motion.div
@@ -38,14 +38,14 @@ export function NotFoundPage({ onNavigate }: NotFoundPageProps) {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="mb-8"
         >
-          <div className="text-9xl font-bold text-blue-600 dark:text-blue-400 mb-4">
+          <div className="text-9xl font-bold text-ainsa-red mb-4">
             404
           </div>
           <motion.div
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.6 }}
-            className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto rounded-full"
+            className="w-24 h-1 bg-gradient-to-r from-ainsa-red to-ainsa-red/80 mx-auto rounded-full"
           />
         </motion.div>
 
@@ -56,13 +56,13 @@ export function NotFoundPage({ onNavigate }: NotFoundPageProps) {
           transition={{ delay: 0.5, duration: 0.6 }}
           className="mb-8"
         >
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h1 className="text-4xl font-bold text-ainsa-black dark:text-ainsa-white mb-4">
             ¡Oops! Página no encontrada
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300 mb-6">
+          <p className="text-xl text-ainsa-gray mb-6">
             La página que buscas no existe o ha sido movida.
           </p>
-          <p className="text-lg text-gray-500 dark:text-gray-400">
+          <p className="text-lg text-ainsa-gray/80">
             No te preocupes, te ayudamos a encontrar lo que necesitas.
           </p>
         </motion.div>
@@ -78,7 +78,7 @@ export function NotFoundPage({ onNavigate }: NotFoundPageProps) {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={handleGoHome}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold flex items-center gap-3 transition-colors duration-200 shadow-lg hover:shadow-xl"
+            className="bg-ainsa-red hover:bg-ainsa-red/90 text-ainsa-white px-8 py-4 rounded-lg font-semibold flex items-center gap-3 transition-colors duration-200 shadow-lg hover:shadow-xl"
           >
             <Home className="w-5 h-5" />
             Ir al Inicio
@@ -88,7 +88,7 @@ export function NotFoundPage({ onNavigate }: NotFoundPageProps) {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={handleGoBack}
-            className="bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-800 dark:text-white px-8 py-4 rounded-lg font-semibold flex items-center gap-3 transition-colors duration-200"
+            className="bg-ainsa-gray/20 hover:bg-ainsa-gray/30 dark:bg-ainsa-gray/20 dark:hover:bg-ainsa-gray/30 text-ainsa-black dark:text-ainsa-white px-8 py-4 rounded-lg font-semibold flex items-center gap-3 transition-colors duration-200"
           >
             <ArrowLeft className="w-5 h-5" />
             Volver Atrás
@@ -102,7 +102,7 @@ export function NotFoundPage({ onNavigate }: NotFoundPageProps) {
           transition={{ delay: 0.9, duration: 0.6 }}
           className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl"
         >
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+          <h2 className="text-2xl font-bold text-ainsa-black dark:text-ainsa-white mb-6">
             Enlaces Útiles
           </h2>
           
@@ -110,16 +110,16 @@ export function NotFoundPage({ onNavigate }: NotFoundPageProps) {
             {/* Productos */}
             <motion.div
               whileHover={{ scale: 1.02 }}
-              className="p-6 bg-blue-50 dark:bg-blue-900/20 rounded-xl hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors duration-200 cursor-pointer"
+              className="p-6 bg-ainsa-gray/10 dark:bg-ainsa-gray/20 rounded-xl hover:bg-ainsa-gray/20 dark:hover:bg-ainsa-gray/30 transition-colors duration-200 cursor-pointer"
               onClick={() => handleNavigate('productos')}
             >
-              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-4">
+              <div className="w-12 h-12 bg-ainsa-red rounded-lg flex items-center justify-center mx-auto mb-4">
                 <Search className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+              <h3 className="text-lg font-semibold text-ainsa-black dark:text-ainsa-white mb-2">
                 Productos
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">
+              <p className="text-ainsa-gray text-sm">
                 Explora nuestro catálogo de acero inoxidable y metales industriales
               </p>
             </motion.div>
@@ -127,16 +127,16 @@ export function NotFoundPage({ onNavigate }: NotFoundPageProps) {
             {/* Servicios */}
             <motion.div
               whileHover={{ scale: 1.02 }}
-              className="p-6 bg-green-50 dark:bg-green-900/20 rounded-xl hover:bg-green-100 dark:hover:bg-green-900/30 transition-colors duration-200 cursor-pointer"
+              className="p-6 bg-ainsa-gray/10 dark:bg-ainsa-gray/20 rounded-xl hover:bg-ainsa-gray/20 dark:hover:bg-ainsa-gray/30 transition-colors duration-200 cursor-pointer"
               onClick={() => handleNavigate('servicios')}
             >
-              <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mx-auto mb-4">
+              <div className="w-12 h-12 bg-ainsa-red rounded-lg flex items-center justify-center mx-auto mb-4">
                 <Search className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+              <h3 className="text-lg font-semibold text-ainsa-black dark:text-ainsa-white mb-2">
                 Servicios
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">
+              <p className="text-ainsa-gray text-sm">
                 Conoce nuestros servicios especializados en metales industriales
               </p>
             </motion.div>
@@ -144,16 +144,16 @@ export function NotFoundPage({ onNavigate }: NotFoundPageProps) {
             {/* Contacto */}
             <motion.div
               whileHover={{ scale: 1.02 }}
-              className="p-6 bg-orange-50 dark:bg-orange-900/20 rounded-xl hover:bg-orange-100 dark:hover:bg-orange-900/30 transition-colors duration-200 cursor-pointer"
+              className="p-6 bg-ainsa-gray/10 dark:bg-ainsa-gray/20 rounded-xl hover:bg-ainsa-gray/20 dark:hover:bg-ainsa-gray/30 transition-colors duration-200 cursor-pointer"
               onClick={() => handleNavigate('contacto')}
             >
-              <div className="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center mx-auto mb-4">
+              <div className="w-12 h-12 bg-ainsa-red rounded-lg flex items-center justify-center mx-auto mb-4">
                 <Phone className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+              <h3 className="text-lg font-semibold text-ainsa-black dark:text-ainsa-white mb-2">
                 Contacto
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">
+              <p className="text-ainsa-gray text-sm">
                 Ponte en contacto con nuestro equipo de expertos
               </p>
             </motion.div>
@@ -170,7 +170,7 @@ export function NotFoundPage({ onNavigate }: NotFoundPageProps) {
           <p className="text-gray-600 dark:text-gray-400 mb-2">
             ¿Necesitas ayuda? Contáctanos
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-sm text-gray-500 dark:text-gray-400">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-sm text-ainsa-gray/80">
             <span>📞 662-438-5634</span>
             <span>📧 info@inoxidablesainsa.mx</span>
             <span>📍 Hermosillo, Sonora</span>

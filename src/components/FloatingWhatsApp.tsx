@@ -17,7 +17,7 @@ export function FloatingWhatsApp() {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={handleWhatsAppClick}
-        className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group"
+        className="bg-ainsa-red hover:bg-ainsa-red/90 text-ainsa-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group"
         aria-label="Contactar por WhatsApp"
       >
         {/* WhatsApp Icon */}
@@ -30,11 +30,11 @@ export function FloatingWhatsApp() {
       <motion.div
         initial={{ opacity: 0, x: 10 }}
         whileHover={{ opacity: 1, x: 0 }}
-        className="absolute right-full top-1/2 transform -translate-y-1/2 mr-3 px-3 py-2 bg-gray-900 text-white text-sm rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+        className="absolute right-full top-1/2 transform -translate-y-1/2 mr-3 px-3 py-2 bg-ainsa-black text-ainsa-white text-sm rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
         style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
       >
         ¡Escríbenos por WhatsApp!
-        <div className="absolute left-full top-1/2 transform -translate-y-1/2 border-4 border-transparent border-l-gray-900" />
+        <div className="absolute left-full top-1/2 transform -translate-y-1/2 border-4 border-transparent border-l-ainsa-black" />
       </motion.div>
     </motion.div>
   );

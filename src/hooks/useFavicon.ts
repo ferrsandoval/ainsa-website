@@ -39,3 +39,4 @@ export function useFavicon() {
     return () => observer.disconnect();
   }, []);
 }
+
