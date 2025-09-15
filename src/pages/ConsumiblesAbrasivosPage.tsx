@@ -132,6 +132,7 @@ export function ConsumiblesAbrasivosPage({ onNavigate }: ConsumiblesAbrasivosPag
                   src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWxkaW5nJTIwZWxlY3Ryb2RlcyUyMGdyaW5kaW5nJTIwZGlzY3N8ZW58MXx8fHwxNzU3MzEzMjE3fDA&ixlib=rb-4.1.0&q=80&w=1080"
                   alt="Welding electrodes and grinding discs"
                   className="w-full h-96 lg:h-[500px] object-cover"
+                  applyDarkFilter={true}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
               </div>

@@ -1,3 +1,4 @@
+import React from "react";
 import { Button } from "./ui/button";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
@@ -14,6 +15,7 @@ export function ProductsOverviewSection({ onNavigate }: ProductsOverviewSectionP
           src="https://images.unsplash.com/photo-1748002388689-c62b45d5c28b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwbWFudWZhY3R1cmluZyUyMGZhY2lsaXR5fGVufDF8fHx8MTc1NzMwNzUzOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
           alt="Industrial manufacturing facility"
           className="w-full h-full object-cover"
+          applyDarkFilter={true}
         />
         
         {/* Overlay gradients */}

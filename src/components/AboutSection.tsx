@@ -1,3 +1,5 @@
+import { ImageWithFallback } from './figma/ImageWithFallback';
+
 const industrialWarehouse = "https://images.unsplash.com/photo-1626470159396-8a6b361ab3a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxtZXRhbCUyMGNvbnN0cnVjdGlvbiUyMGluZHVzdHJpYWwlMjB3YXJlaG91c2V8ZW58MXx8fHwxNzU3MzA1MzY0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
 
 export function AboutSection() {
@@ -8,7 +10,7 @@ export function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center mb-32">
           {/* Image */}
           <div className="lg:col-span-5">
-            <img 
+            <ImageWithFallback 
               src={industrialWarehouse}
               alt="Industrial warehouse facility" 
               className="w-full aspect-square object-cover rounded-3xl"

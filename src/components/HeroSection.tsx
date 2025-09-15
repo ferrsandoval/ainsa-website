@@ -39,6 +39,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
           src="https://images.unsplash.com/photo-1697281679290-ad7be1b10682?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdGVlbCUyMG1hbnVmYWN0dXJpbmclMjBpbmR1c3RyaWFsJTIwd2FyZWhvdXNlfGVufDF8fHx8MTc1NzMwNzE4MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
           alt="Industrial steel warehouse"
           className="w-full h-full object-cover"
+          applyDarkFilter={true}
         />
         
         {/* Overlay gradients - más sutil para destacar el logo */}
@@ -104,7 +105,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <AnimatedCTAButton 
-              className="bg-ainsa-black hover:bg-ainsa-black/90 text-ainsa-white px-6 py-3 sm:px-8 sm:py-4 h-auto font-medium text-sm sm:text-base rounded-xl shadow-lg min-w-[160px] sm:min-w-[180px] justify-center"
+              className="bg-[#a32714] hover:bg-[#a32714]/90 text-white px-6 py-3 sm:px-8 sm:py-4 h-auto font-medium text-sm sm:text-base rounded-xl shadow-lg min-w-[160px] sm:min-w-[180px] justify-center"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               onClick={() => onNavigate?.('contacto')}
             >
@@ -122,7 +123,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
             >
               <button
                 onClick={() => window.open('https://api.whatsapp.com/send/?phone=526624968802&text=Hola,%20quisiera%20obtener%20más%20información%20sobre%20sus%20productos%20y%20servicios.&type=phone_number&app_absent=0', '_blank')}
-                className="bg-ainsa-red hover:bg-ainsa-red/90 text-ainsa-white font-medium px-6 py-3 sm:px-8 sm:py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center space-x-2 whitespace-nowrap min-w-[160px] sm:min-w-[180px] justify-center"
+                className="bg-[#25D366] hover:bg-[#22C55E] text-white font-medium px-6 py-3 sm:px-8 sm:py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center space-x-2 whitespace-nowrap min-w-[160px] sm:min-w-[180px] justify-center"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -133,58 +134,6 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
             </motion.div>
           </motion.div>
 
-          {/* Stats or trust indicators */}
-          <motion.div 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.4, delay: 0.9 }}
-            className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto pt-2 sm:pt-4"
-          >
-            <div className="text-center py-2">
-              <div 
-                className="text-xl sm:text-2xl lg:text-3xl font-bold text-ainsa-black dark:text-ainsa-white mb-1"
-                style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
-              >
-                100%
-              </div>
-              <p 
-                className="text-xs sm:text-sm text-ainsa-gray uppercase tracking-wider"
-                style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
-              >
-                Calidad Garantizada
-              </p>
-            </div>
-            
-            <div className="text-center py-2">
-              <div 
-                className="text-xl sm:text-2xl lg:text-3xl font-bold text-ainsa-black dark:text-ainsa-white mb-1"
-                style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
-              >
-                500+
-              </div>
-              <p 
-                className="text-xs sm:text-sm text-ainsa-gray uppercase tracking-wider"
-                style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
-              >
-                Proyectos Completados
-              </p>
-            </div>
-            
-            <div className="text-center py-2">
-              <div 
-                className="text-xl sm:text-2xl lg:text-3xl font-bold text-ainsa-black dark:text-ainsa-white mb-1"
-                style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
-              >
-                ISO 9001
-              </div>
-              <p 
-                className="text-xs sm:text-sm text-ainsa-gray uppercase tracking-wider"
-                style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
-              >
-                Certificación de Calidad
-              </p>
-            </div>
-          </motion.div>
 
         </div>
       </div>

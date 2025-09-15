@@ -8,6 +8,19 @@ export function ThemeToggle() {
     // Check if dark mode is already set
     const isDarkMode = document.documentElement.classList.contains('dark');
     setIsDark(isDarkMode);
+    
+    // Listen for changes in the theme
+    const observer = new MutationObserver(() => {
+      const isCurrentlyDark = document.documentElement.classList.contains('dark');
+      setIsDark(isCurrentlyDark);
+    });
+    
+    observer.observe(document.documentElement, { 
+      attributes: true, 
+      attributeFilter: ['class'] 
+    });
+    
+    return () => observer.disconnect();
   }, []);
 
   const toggleTheme = () => {
@@ -16,8 +29,10 @@ export function ThemeToggle() {
     
     if (newIsDark) {
       document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
     } else {
       document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
     }
   };
 
@@ -25,14 +40,7 @@ export function ThemeToggle() {
     <div className="fixed bottom-6 left-6 z-50">
       <button
         onClick={toggleTheme}
-        className={`
-          w-14 h-8 rounded-full flex items-center justify-center
-          transition-all duration-300 shadow-lg hover:shadow-xl
-          ${isDark 
-            ? 'bg-background border border-border/30' 
-            : 'bg-background border border-border/20 hover:bg-muted/50'
-          }
-        `}
+        className="w-14 h-8 rounded-full flex items-center justify-center bg-background border border-border/30 hover:bg-muted/50 transition-all duration-300 shadow-lg hover:shadow-xl"
         aria-label="Toggle theme"
       >
         <div className="relative w-5 h-5">

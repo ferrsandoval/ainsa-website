@@ -112,6 +112,7 @@ export function MetalesNoFerrososPage({ onNavigate }: MetalesNoFerrososPageProps
                   src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3BwZXIlMjBicmFzcyUyMG1ldGFsJTIwYmFyc3xlbnwxfHx8fDE3NTczMTMyMTd8MA&ixlib=rb-4.1.0&q=80&w=1080"
                   alt="Non-ferrous metals: copper, brass, bronze bars"
                   className="w-full h-96 lg:h-[500px] object-cover"
+                  applyDarkFilter={true}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
               </div>

@@ -35,6 +35,16 @@ export default function App() {
   // Dynamic favicon based on theme
   useFavicon();
 
+  // Initialize theme from localStorage
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, []);
+
   // Valid pages for routing
   const validPages = [
     'home', 'productos', 'aceros-inoxidables', 'aluminio', 'metales-no-ferrosos',

@@ -139,6 +139,7 @@ export function PlacasAntidesgastePage({ onNavigate }: PlacasAntidesgastePagePro
                   src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWFyJTIwcmVzaXN0YW50JTIwc3RlZWwlMjBwbGF0ZXMlMjBtaW5pbmd8ZW58MXx8fHwxNzU3MzEzMjE3fDA&ixlib=rb-4.1.0&q=80&w=1080"
                   alt="Wear resistant steel plates for mining and heavy machinery"
                   className="w-full h-96 lg:h-[500px] object-cover"
+                  applyDarkFilter={true}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
               </div>

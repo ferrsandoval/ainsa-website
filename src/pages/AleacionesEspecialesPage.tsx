@@ -97,6 +97,7 @@ export function AleacionesEspecialesPage({ onNavigate }: AleacionesEspecialesPag
                 src="https://images.unsplash.com/photo-1558618666-1a1e513a7a1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMGFsbG95JTIwaW5kdXN0cmlhbHxlbnwxfHx8fDE3NTczMTEwNDJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Metal alloy industrial"
                 className="w-full h-96 lg:h-[500px] object-cover"
+                applyDarkFilter={true}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
             </div>

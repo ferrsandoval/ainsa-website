@@ -104,6 +104,7 @@ export function AluminioPage({ onNavigate }: AluminioPageProps) {
                   src="https://images.unsplash.com/photo-1613241541494-f7acea6e92a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbHVtaW51bSUyMHNoZWV0cyUyMG1ldGFsfGVufDF8fHx8MTc1NzMxMzIxN3ww&ixlib=rb-4.1.0&q=80&w=1080"
                   alt="Aluminum sheets and profiles"
                   className="w-full h-96 lg:h-[500px] object-cover"
+                  applyDarkFilter={true}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
               </div>

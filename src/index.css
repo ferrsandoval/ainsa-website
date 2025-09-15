@@ -1,20 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
 @import url("https://use.typekit.net/xpf2zky.css");
 
-/* Variables CSS personalizadas para AINSA */
+/* Tailwind CSS v4 */
+@import "tailwindcss";
+
+/* Variables CSS para el sistema de temas */
 :root {
-  --color-ainsa-gray: #a7a9ac;
-  --color-ainsa-white: #ffffff;
-  --color-ainsa-black: #000000;
-  --color-ainsa-red: #a32714;
+  --background: 0 0% 100%;
+  --foreground: 0 0% 3.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 3.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 3.9%;
+  --primary: 0 0% 9%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 0 0% 96.1%;
+  --secondary-foreground: 0 0% 9%;
+  --muted: 0 0% 96.1%;
+  --muted-foreground: 0 0% 45.1%;
+  --accent: 0 0% 96.1%;
+  --accent-foreground: 0 0% 9%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 0 0% 89.8%;
+  --input: 0 0% 89.8%;
+  --ring: 0 0% 3.9%;
 }
 
-/* Tema oscuro */
 .dark {
-  --color-ainsa-gray: #a7a9ac;
-  --color-ainsa-white: #ffffff;
-  --color-ainsa-black: #000000;
-  --color-ainsa-red: #a32714;
+  --background: 0 0% 3.9%;
+  --foreground: 0 0% 98%;
+  --card: 0 0% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --popover: 0 0% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 0 0% 98%;
+  --primary-foreground: 0 0% 9%;
+  --secondary: 0 0% 14.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 0 0% 14.9%;
+  --muted-foreground: 0 0% 63.9%;
+  --accent: 0 0% 14.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 0 0% 14.9%;
+  --input: 0 0% 14.9%;
+  --ring: 0 0% 83.1%;
 }
 
 /* Estilos base */
@@ -29,252 +61,6 @@ html {
 body {
   font-family: 'Inter', system-ui, sans-serif;
   line-height: 1.6;
-  color: var(--color-ainsa-black);
-  background-color: var(--color-ainsa-white);
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
 }
-
-.dark body {
-  color: var(--color-ainsa-white);
-  background-color: var(--color-ainsa-black);
-}
-
-/* Utilidades personalizadas */
-.text-ainsa-gray {
-  color: var(--color-ainsa-gray);
-}
-
-.text-ainsa-white {
-  color: var(--color-ainsa-white);
-}
-
-.text-ainsa-black {
-  color: var(--color-ainsa-black);
-}
-
-.text-ainsa-red {
-  color: var(--color-ainsa-red);
-}
-
-.bg-ainsa-gray {
-  background-color: var(--color-ainsa-gray);
-}
-
-.bg-ainsa-white {
-  background-color: var(--color-ainsa-white);
-}
-
-.bg-ainsa-black {
-  background-color: var(--color-ainsa-black);
-}
-
-.bg-ainsa-red {
-  background-color: var(--color-ainsa-red);
-}
-
-.border-ainsa-gray {
-  border-color: var(--color-ainsa-gray);
-}
-
-.border-ainsa-red {
-  border-color: var(--color-ainsa-red);
-}
-
-/* Hover states */
-.hover\:bg-ainsa-red:hover {
-  background-color: var(--color-ainsa-red);
-}
-
-.hover\:bg-ainsa-red\/90:hover {
-  background-color: rgba(163, 39, 20, 0.9);
-}
-
-.hover\:bg-ainsa-black\/90:hover {
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.hover\:text-ainsa-red:hover {
-  color: var(--color-ainsa-red);
-}
-
-.hover\:text-ainsa-white:hover {
-  color: var(--color-ainsa-white);
-}
-
-.hover\:text-ainsa-black:hover {
-  color: var(--color-ainsa-black);
-}
-
-/* Opacidades */
-.bg-ainsa-white\/95 {
-  background-color: rgba(255, 255, 255, 0.95);
-}
-
-.bg-ainsa-white\/90 {
-  background-color: rgba(255, 255, 255, 0.9);
-}
-
-.bg-ainsa-white\/85 {
-  background-color: rgba(255, 255, 255, 0.85);
-}
-
-.bg-ainsa-white\/80 {
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.bg-ainsa-white\/70 {
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-.bg-ainsa-white\/60 {
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
-.bg-ainsa-black\/95 {
-  background-color: rgba(0, 0, 0, 0.95);
-}
-
-.bg-ainsa-black\/90 {
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.bg-ainsa-black\/85 {
-  background-color: rgba(0, 0, 0, 0.85);
-}
-
-.bg-ainsa-black\/80 {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.bg-ainsa-black\/70 {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.bg-ainsa-black\/60 {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.bg-ainsa-gray\/10 {
-  background-color: rgba(167, 169, 172, 0.1);
-}
-
-.bg-ainsa-gray\/20 {
-  background-color: rgba(167, 169, 172, 0.2);
-}
-
-.bg-ainsa-gray\/30 {
-  background-color: rgba(167, 169, 172, 0.3);
-}
-
-.bg-ainsa-red\/10 {
-  background-color: rgba(163, 39, 20, 0.1);
-}
-
-.bg-ainsa-red\/20 {
-  background-color: rgba(163, 39, 20, 0.2);
-}
-
-.bg-ainsa-red\/30 {
-  background-color: rgba(163, 39, 20, 0.3);
-}
-
-.bg-ainsa-red\/90 {
-  background-color: rgba(163, 39, 20, 0.9);
-}
-
-.border-ainsa-gray\/30 {
-  border-color: rgba(167, 169, 172, 0.3);
-}
-
-.border-ainsa-red\/20 {
-  border-color: rgba(163, 39, 20, 0.2);
-}
-
-/* Dark mode variants */
-.dark .text-ainsa-black {
-  color: var(--color-ainsa-white);
-}
-
-.dark .text-ainsa-white {
-  color: var(--color-ainsa-black);
-}
-
-.dark .bg-ainsa-white {
-  background-color: var(--color-ainsa-black);
-}
-
-.dark .bg-ainsa-black {
-  background-color: var(--color-ainsa-white);
-}
-
-.dark .bg-ainsa-white\/95 {
-  background-color: rgba(0, 0, 0, 0.95);
-}
-
-.dark .bg-ainsa-white\/90 {
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.dark .bg-ainsa-white\/85 {
-  background-color: rgba(0, 0, 0, 0.85);
-}
-
-.dark .bg-ainsa-white\/80 {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.dark .bg-ainsa-white\/70 {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.dark .bg-ainsa-white\/60 {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.dark .bg-ainsa-black\/95 {
-  background-color: rgba(255, 255, 255, 0.95);
-}
-
-.dark .bg-ainsa-black\/90 {
-  background-color: rgba(255, 255, 255, 0.9);
-}
-
-.dark .bg-ainsa-black\/85 {
-  background-color: rgba(255, 255, 255, 0.85);
-}
-
-.dark .bg-ainsa-black\/80 {
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.dark .bg-ainsa-black\/70 {
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-.dark .bg-ainsa-black\/60 {
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
-.dark .bg-ainsa-gray\/10 {
-  background-color: rgba(167, 169, 172, 0.1);
-}
-
-.dark .bg-ainsa-gray\/20 {
-  background-color: rgba(167, 169, 172, 0.2);
-}
-
-.dark .bg-ainsa-gray\/30 {
-  background-color: rgba(167, 169, 172, 0.3);
-}
-
-.dark .border-ainsa-gray\/30 {
-  border-color: rgba(167, 169, 172, 0.3);
-}
-
-.dark .border-ainsa-red\/20 {
-  border-color: rgba(163, 39, 20, 0.2);
-}
-
-/* Tailwind CSS */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
