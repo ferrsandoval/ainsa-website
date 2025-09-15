@@ -38,7 +38,7 @@ export function WhyChooseUsSection({ onNavigate }: WhyChooseUsSectionProps) {
   ];
 
   return (
-    <section className="py-24 lg:py-32 bg-muted/30">
+    <section className="py-24 lg:py-32 bg-ainsa-gray/10 dark:bg-ainsa-gray/20">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
@@ -56,7 +56,7 @@ export function WhyChooseUsSection({ onNavigate }: WhyChooseUsSectionProps) {
               ¿POR QUÉ ELEGIRNOS?
             </span>
             <h2 
-              className="text-4xl lg:text-5xl xl:text-6xl leading-tight tracking-tight text-foreground mb-6"
+              className="text-4xl lg:text-5xl xl:text-6xl leading-tight tracking-tight text-ainsa-black dark:text-ainsa-white mb-6"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
             >
               Tu Socio Estratégico en
@@ -68,7 +68,7 @@ export function WhyChooseUsSection({ onNavigate }: WhyChooseUsSectionProps) {
               </span>
             </h2>
             <p 
-              className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
+              className="text-lg lg:text-xl text-ainsa-gray leading-relaxed max-w-3xl mx-auto"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               Más que un proveedor, somos tu aliado para el éxito. Descubre por qué las empresas 
@@ -96,13 +96,13 @@ export function WhyChooseUsSection({ onNavigate }: WhyChooseUsSectionProps) {
                     </div>
                     <div className="text-right">
                       <div 
-                        className="text-3xl lg:text-4xl font-bold text-foreground group-hover:text-accent transition-colors duration-300"
+                        className="text-3xl lg:text-4xl font-bold text-ainsa-black dark:text-ainsa-white group-hover:text-ainsa-red transition-colors duration-300"
                         style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                       >
                         {reason.metric}
                       </div>
                       <p 
-                        className="text-xs text-muted-foreground uppercase tracking-wide"
+                        className="text-xs text-ainsa-gray uppercase tracking-wide"
                         style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                       >
                         {reason.detail}
@@ -113,13 +113,13 @@ export function WhyChooseUsSection({ onNavigate }: WhyChooseUsSectionProps) {
                   {/* Content */}
                   <div className="space-y-3">
                     <h3 
-                      className="text-xl lg:text-2xl text-foreground group-hover:text-accent transition-colors duration-300"
+                      className="text-xl lg:text-2xl text-ainsa-black dark:text-ainsa-white group-hover:text-ainsa-red transition-colors duration-300"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                     >
                       {reason.title}
                     </h3>
                     <p 
-                      className="text-muted-foreground leading-relaxed"
+                      className="text-ainsa-gray leading-relaxed"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                     >
                       {reason.description}
@@ -143,13 +143,13 @@ export function WhyChooseUsSection({ onNavigate }: WhyChooseUsSectionProps) {
           >
             <div className="bg-gradient-to-r from-primary/5 to-accent/5 border border-border/30 rounded-2xl p-8 lg:p-12">
               <h3 
-                className="text-2xl lg:text-3xl text-foreground mb-4"
+                className="text-2xl lg:text-3xl text-ainsa-black dark:text-ainsa-white mb-4"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
               >
                 ¿Listo para experimentar la diferencia AINSA?
               </h3>
               <p 
-                className="text-muted-foreground mb-6 max-w-2xl mx-auto"
+                className="text-ainsa-gray mb-6 max-w-2xl mx-auto"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 Únete a las empresas que ya confían en nosotros para sus proyectos más exigentes.
@@ -158,7 +158,7 @@ export function WhyChooseUsSection({ onNavigate }: WhyChooseUsSectionProps) {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-3 rounded-xl font-medium transition-colors"
+                  className="bg-ainsa-red hover:bg-ainsa-red/90 text-ainsa-white px-8 py-3 rounded-xl font-medium transition-colors"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                   onClick={() => onNavigate?.('contacto')}
                 >
@@ -167,7 +167,7 @@ export function WhyChooseUsSection({ onNavigate }: WhyChooseUsSectionProps) {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-transparent border border-border hover:bg-muted text-foreground px-8 py-3 rounded-xl font-medium transition-colors"
+                  className="bg-transparent border border-ainsa-gray/30 hover:bg-ainsa-gray/10 text-ainsa-black dark:text-ainsa-white px-8 py-3 rounded-xl font-medium transition-colors"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                   onClick={() => window.open('https://api.whatsapp.com/send/?phone=526624968802&text=Hola,%20me%20gustaría%20recibir%20información%20sobre%20su%20catálogo%20de%20productos.&type=phone_number&app_absent=0', '_blank')}
                 >

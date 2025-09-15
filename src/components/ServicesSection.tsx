@@ -27,7 +27,7 @@ export function ServicesSection() {
   ];
 
   return (
-    <section id="servicios" className="bg-background py-32">
+    <section id="servicios" className="bg-ainsa-white dark:bg-ainsa-black py-32">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="max-w-7xl mx-auto">
           
@@ -39,7 +39,7 @@ export function ServicesSection() {
                 {/* Categoría */}
                 <div className="mb-6">
                   <span 
-                    className="caption text-muted-foreground"
+                    className="caption text-ainsa-gray"
                     style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                   >
                     {service.category}
@@ -48,7 +48,7 @@ export function ServicesSection() {
                 
                 {/* Título */}
                 <h3 
-                  className="text-2xl lg:text-3xl font-semibold mb-6 text-foreground leading-tight"
+                  className="text-2xl lg:text-3xl font-semibold mb-6 text-ainsa-black dark:text-ainsa-white leading-tight"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                 >
                   {service.title}
@@ -56,7 +56,7 @@ export function ServicesSection() {
                 
                 {/* Descripción */}
                 <p 
-                  className="text-muted-foreground leading-relaxed mb-8 text-base"
+                  className="text-ainsa-gray leading-relaxed mb-8 text-base"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   {service.description}
@@ -65,7 +65,7 @@ export function ServicesSection() {
                 {/* Link */}
                 <a 
                   href="#" 
-                  className="inline-flex items-center text-sm font-medium text-foreground hover:text-primary transition-colors duration-300 group-hover:translate-x-1 transform transition-transform"
+                  className="inline-flex items-center text-sm font-medium text-ainsa-black dark:text-ainsa-white hover:text-primary transition-colors duration-300 group-hover:translate-x-1 transform transition-transform"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   {service.link}

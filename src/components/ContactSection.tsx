@@ -4,17 +4,17 @@ import { Textarea } from "./ui/textarea";
 
 export function ContactSection() {
   return (
-    <section id="contacto" className="py-32 lg:py-40 bg-background">
+    <section id="contacto" className="py-32 lg:py-40 bg-ainsa-white dark:bg-ainsa-black">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="max-w-4xl mx-auto text-center mb-20">
           <span 
-            className="caption text-muted-foreground mb-6 block bg-muted px-6 py-3 rounded-full inline-block"
+            className="caption text-ainsa-gray mb-6 block bg-ainsa-gray/10 dark:bg-ainsa-gray/20 px-6 py-3 rounded-full inline-block"
             style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
           >
             CONTACTO
           </span>
           <h2 
-            className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight mb-8 text-foreground"
+            className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight mb-8 text-ainsa-black dark:text-ainsa-white"
             style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
           >
             Envíanos un
@@ -26,7 +26,7 @@ export function ContactSection() {
             </span>
           </h2>
           <p 
-            className="text-lg lg:text-xl text-muted-foreground leading-relaxed"
+            className="text-lg lg:text-xl text-ainsa-gray leading-relaxed"
             style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
           >
             Estamos aquí para ayudarte con tus necesidades de acero inoxidable y metales industriales. 
@@ -37,31 +37,31 @@ export function ContactSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
           {/* Contact Form */}
           <div className="lg:col-span-8">
-            <div className="bg-card border border-border/50 rounded-3xl p-10 lg:p-12 shadow-lg">
+            <div className="bg-ainsa-white dark:bg-ainsa-black border border-ainsa-gray/50 rounded-3xl p-10 lg:p-12 shadow-lg">
               <form className="space-y-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div>
                     <label 
-                      className="block text-sm mb-3 font-medium text-foreground"
+                      className="block text-sm mb-3 font-medium text-ainsa-black dark:text-ainsa-white"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                     >
                       Nombre
                     </label>
                     <Input 
-                      className="h-14 bg-input-background border border-border/30 rounded-xl text-base"
+                      className="h-14 bg-input-background border border-ainsa-gray/30 rounded-xl text-base"
                       placeholder="Tu nombre completo" 
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                     />
                   </div>
                   <div>
                     <label 
-                      className="block text-sm mb-3 font-medium text-foreground"
+                      className="block text-sm mb-3 font-medium text-ainsa-black dark:text-ainsa-white"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                     >
                       Empresa
                     </label>
                     <Input 
-                      className="h-14 bg-input-background border border-border/30 rounded-xl text-base"
+                      className="h-14 bg-input-background border border-ainsa-gray/30 rounded-xl text-base"
                       placeholder="Nombre de la empresa" 
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                     />
@@ -71,13 +71,13 @@ export function ContactSection() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div>
                     <label 
-                      className="block text-sm mb-3 font-medium text-foreground"
+                      className="block text-sm mb-3 font-medium text-ainsa-black dark:text-ainsa-white"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                     >
                       Email
                     </label>
                     <Input 
-                      className="h-14 bg-input-background border border-border/30 rounded-xl text-base"
+                      className="h-14 bg-input-background border border-ainsa-gray/30 rounded-xl text-base"
                       type="email" 
                       placeholder="correo@empresa.com" 
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
@@ -85,13 +85,13 @@ export function ContactSection() {
                   </div>
                   <div>
                     <label 
-                      className="block text-sm mb-3 font-medium text-foreground"
+                      className="block text-sm mb-3 font-medium text-ainsa-black dark:text-ainsa-white"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                     >
                       Teléfono
                     </label>
                     <Input 
-                      className="h-14 bg-input-background border border-border/30 rounded-xl text-base"
+                      className="h-14 bg-input-background border border-ainsa-gray/30 rounded-xl text-base"
                       placeholder="+52 (55) 1234-5678" 
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                     />
@@ -100,13 +100,13 @@ export function ContactSection() {
                 
                 <div>
                   <label 
-                    className="block text-sm mb-3 font-medium text-foreground"
+                    className="block text-sm mb-3 font-medium text-ainsa-black dark:text-ainsa-white"
                     style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                   >
                     Producto de Interés
                   </label>
                   <Input 
-                    className="h-14 bg-input-background border border-border/30 rounded-xl text-base"
+                    className="h-14 bg-input-background border border-ainsa-gray/30 rounded-xl text-base"
                     placeholder="Ej: Lámina 304, Tubería 316L, etc." 
                     style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                   />
@@ -114,20 +114,20 @@ export function ContactSection() {
                 
                 <div>
                   <label 
-                    className="block text-sm mb-3 font-medium text-foreground"
+                    className="block text-sm mb-3 font-medium text-ainsa-black dark:text-ainsa-white"
                     style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                   >
                     Mensaje
                   </label>
                   <Textarea 
-                    className="bg-input-background border border-border/30 min-h-32 rounded-xl text-base"
+                    className="bg-input-background border border-ainsa-gray/30 min-h-32 rounded-xl text-base"
                     placeholder="Describe tus requerimientos específicos, cantidades, dimensiones, etc."
                     style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                   />
                 </div>
                 
                 <Button 
-                  className="bg-accent hover:bg-accent/90 text-accent-foreground px-10 py-6 h-auto text-base rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                  className="bg-ainsa-red hover:bg-ainsa-red/90 text-ainsa-white px-10 py-6 h-auto text-base rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   Enviar Solicitud
@@ -138,14 +138,14 @@ export function ContactSection() {
           
           {/* Contact Information */}
           <div className="lg:col-span-4 space-y-8">
-            <div className="bg-card border border-border/50 rounded-3xl p-8 shadow-lg">
+            <div className="bg-ainsa-white dark:bg-ainsa-black border border-ainsa-gray/50 rounded-3xl p-8 shadow-lg">
               <h4 
-                className="text-2xl font-bold mb-8 text-foreground"
+                className="text-2xl font-bold mb-8 text-ainsa-black dark:text-ainsa-white"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
               >
                 Información de Contacto
               </h4>
-              <div className="space-y-8 text-muted-foreground">
+              <div className="space-y-8 text-ainsa-gray">
                 <div>
                   <p 
                     className="caption text-accent mb-3"
@@ -154,7 +154,7 @@ export function ContactSection() {
                     DIRECCIÓN
                   </p>
                   <p 
-                    className="text-foreground leading-relaxed"
+                    className="text-ainsa-black dark:text-ainsa-white leading-relaxed"
                     style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                   >
                     Tlaxcala 328, Col. San Benito<br />Hermosillo, Sonora<br />México
@@ -169,7 +169,7 @@ export function ContactSection() {
                     TELÉFONO
                   </p>
                   <p 
-                    className="text-foreground"
+                    className="text-ainsa-black dark:text-ainsa-white"
                     style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                   >
                     (662) 438 5634<br />(662) 170 2822<br />(662) 496 8802
@@ -184,7 +184,7 @@ export function ContactSection() {
                     EMAIL
                   </p>
                   <p 
-                    className="text-foreground"
+                    className="text-ainsa-black dark:text-ainsa-white"
                     style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                   >
                     ventas@inoxidablesainsa.mx
@@ -199,7 +199,7 @@ export function ContactSection() {
                     HORARIOS
                   </p>
                   <p 
-                    className="text-foreground leading-relaxed"
+                    className="text-ainsa-black dark:text-ainsa-white leading-relaxed"
                     style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                   >
                     Lunes - Viernes<br />08:30 a.m. – 06:00 p.m.
@@ -209,15 +209,15 @@ export function ContactSection() {
             </div>
             
             {/* Additional Info */}
-            <div className="bg-accent/10 border border-accent/20 p-8 rounded-3xl">
+            <div className="bg-ainsa-red/10 border border-ainsa-red/20 p-8 rounded-3xl">
               <h4 
-                className="text-xl font-bold mb-4 text-foreground"
+                className="text-xl font-bold mb-4 text-ainsa-black dark:text-ainsa-white"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
               >
                 ¿Necesitas Asesoría Técnica?
               </h4>
               <p 
-                className="text-muted-foreground mb-6 leading-relaxed"
+                className="text-ainsa-gray mb-6 leading-relaxed"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 Nuestros ingenieros especializados pueden ayudarte a seleccionar 

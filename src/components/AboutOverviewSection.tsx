@@ -28,7 +28,7 @@ export function AboutOverviewSection({ onNavigate }: AboutOverviewSectionProps) 
           {/* Eyebrow text */}
           <div className="text-center mb-12">
             <span 
-              className="caption text-muted-foreground bg-background/80 dark:bg-background/60 px-6 py-3 rounded-full backdrop-blur-sm border border-border/30"
+              className="caption text-ainsa-gray bg-ainsa-white dark:bg-ainsa-black/80 dark:bg-ainsa-white dark:bg-ainsa-black/60 px-6 py-3 rounded-full backdrop-blur-sm border border-ainsa-gray/30"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               ¿QUIÉNES SOMOS?
@@ -38,7 +38,7 @@ export function AboutOverviewSection({ onNavigate }: AboutOverviewSectionProps) 
           {/* Main heading */}
           <div className="text-center mb-20">
             <h2 
-              className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[0.9] tracking-tight mb-8 text-foreground"
+              className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[0.9] tracking-tight mb-8 text-ainsa-black dark:text-ainsa-white"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
             >
               Empresa Mexicana
@@ -51,7 +51,7 @@ export function AboutOverviewSection({ onNavigate }: AboutOverviewSectionProps) 
             </h2>
             
             <p 
-              className="text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-4xl mx-auto"
+              className="text-xl lg:text-2xl text-ainsa-gray leading-relaxed max-w-4xl mx-auto"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               Somos una empresa nacida en México al noroeste de la república en el estado de Sonora, 
@@ -86,19 +86,19 @@ export function AboutOverviewSection({ onNavigate }: AboutOverviewSectionProps) 
             ].map((item, index) => (
               <div 
                 key={index}
-                className="bg-background/80 dark:bg-background/60 backdrop-blur-sm border border-border/30 rounded-2xl p-8 hover:bg-background/90 dark:hover:bg-background/70 transition-all duration-300 hover:scale-105 group text-center"
+                className="bg-ainsa-white dark:bg-ainsa-black/80 dark:bg-ainsa-white dark:bg-ainsa-black/60 backdrop-blur-sm border border-ainsa-gray/30 rounded-2xl p-8 hover:bg-ainsa-white dark:bg-ainsa-black/90 dark:hover:bg-ainsa-white dark:bg-ainsa-black/70 transition-all duration-300 hover:scale-105 group text-center"
               >
                 <div className="text-4xl mb-6 group-hover:scale-110 transition-transform duration-300">
                   {item.icon}
                 </div>
                 <h3 
-                  className="text-2xl font-bold mb-4 text-foreground"
+                  className="text-2xl font-bold mb-4 text-ainsa-black dark:text-ainsa-white"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                 >
                   {item.value}
                 </h3>
                 <p 
-                  className="text-muted-foreground leading-relaxed"
+                  className="text-ainsa-gray leading-relaxed"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   {item.description}
@@ -108,16 +108,16 @@ export function AboutOverviewSection({ onNavigate }: AboutOverviewSectionProps) 
           </div>
 
           {/* Story section */}
-          <div className="bg-background/90 dark:bg-background/70 backdrop-blur-sm border border-border/30 rounded-3xl p-12 lg:p-16 mb-16">
+          <div className="bg-ainsa-white dark:bg-ainsa-black/90 dark:bg-ainsa-white dark:bg-ainsa-black/70 backdrop-blur-sm border border-ainsa-gray/30 rounded-3xl p-12 lg:p-16 mb-16">
             <div className="max-w-4xl mx-auto text-center">
               <h3 
-                className="text-3xl lg:text-4xl font-bold mb-8 text-foreground"
+                className="text-3xl lg:text-4xl font-bold mb-8 text-ainsa-black dark:text-ainsa-white"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
               >
                 Nuestra Historia
               </h3>
               <p 
-                className="text-lg lg:text-xl text-muted-foreground leading-relaxed mb-8"
+                className="text-lg lg:text-xl text-ainsa-gray leading-relaxed mb-8"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 Comprometidos con nuestros clientes AINSA busca ofrecer la mejor calidad en acero inoxidable, 
@@ -125,7 +125,7 @@ export function AboutOverviewSection({ onNavigate }: AboutOverviewSectionProps) 
                 de inoxidables en el noroeste.
               </p>
               <p 
-                className="text-lg lg:text-xl text-muted-foreground leading-relaxed"
+                className="text-lg lg:text-xl text-ainsa-gray leading-relaxed"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 AINSA se compromete con la promoción, capacitación y asesoramiento para incrementar 
@@ -139,7 +139,7 @@ export function AboutOverviewSection({ onNavigate }: AboutOverviewSectionProps) 
           <div className="text-center">
             <Button 
               onClick={() => onNavigate('nosotros')}
-              className="bg-accent hover:bg-accent/90 text-accent-foreground px-10 py-6 h-auto font-medium text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              className="bg-ainsa-red hover:bg-ainsa-red/90 text-ainsa-red-foreground px-10 py-6 h-auto font-medium text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               Conoce Más Sobre Nosotros

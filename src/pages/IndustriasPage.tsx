@@ -95,7 +95,7 @@ export function IndustriasPage({ onNavigate }: IndustriasPageProps) {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-ainsa-white dark:bg-ainsa-black">
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-primary/5" />
@@ -109,7 +109,7 @@ export function IndustriasPage({ onNavigate }: IndustriasPageProps) {
               className="mb-6"
             >
               <span 
-                className="inline-block px-4 py-2 bg-accent/10 text-accent rounded-full mb-6"
+                className="inline-block px-4 py-2 bg-ainsa-red/10 text-ainsa-red rounded-full mb-6"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 600 }}
               >
                 Sectores Industriales
@@ -120,7 +120,7 @@ export function IndustriasPage({ onNavigate }: IndustriasPageProps) {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
-              className="mb-6 text-foreground"
+              className="mb-6 text-ainsa-black dark:text-ainsa-white"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
             >
               Industrias que Impulsamos
@@ -130,7 +130,7 @@ export function IndustriasPage({ onNavigate }: IndustriasPageProps) {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed"
+              className="text-xl text-ainsa-gray max-w-3xl mx-auto leading-relaxed"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               En AINSA Acero Inoxidable entendemos que cada sector tiene necesidades únicas. Por 
@@ -142,7 +142,7 @@ export function IndustriasPage({ onNavigate }: IndustriasPageProps) {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="text-lg text-muted-foreground max-w-2xl mx-auto mt-4"
+              className="text-lg text-ainsa-gray max-w-2xl mx-auto mt-4"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               Nuestra experiencia y red de alianzas estratégicas nos convierten en un socio 
@@ -162,7 +162,7 @@ export function IndustriasPage({ onNavigate }: IndustriasPageProps) {
       </section>
 
       {/* Industrias Section */}
-      <section className="py-20 lg:py-28 bg-background">
+      <section className="py-20 lg:py-28 bg-ainsa-white dark:bg-ainsa-black">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="space-y-16">
             {industrias.map((industria, index) => (
@@ -180,12 +180,12 @@ export function IndustriasPage({ onNavigate }: IndustriasPageProps) {
                 <div className={`lg:col-span-7 ${index % 2 === 1 ? 'lg:col-start-6' : ''}`}>
                   <div className="max-w-2xl">
                     <div className="flex items-center space-x-3 mb-6">
-                      <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center">
+                      <div className="w-12 h-12 bg-ainsa-red/10 rounded-xl flex items-center justify-center">
                         <span className="text-2xl">{industria.emoji}</span>
                       </div>
                       <div>
                         <h2 
-                          className="text-3xl lg:text-4xl text-foreground"
+                          className="text-3xl lg:text-4xl text-ainsa-black dark:text-ainsa-white"
                           style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                         >
                           {industria.title}
@@ -194,7 +194,7 @@ export function IndustriasPage({ onNavigate }: IndustriasPageProps) {
                     </div>
 
                     <p 
-                      className="text-lg text-accent mb-6"
+                      className="text-lg text-ainsa-red mb-6"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400, fontStyle: 'italic' }}
                     >
                       {industria.subtitle}
@@ -203,9 +203,9 @@ export function IndustriasPage({ onNavigate }: IndustriasPageProps) {
                     <div className="space-y-4 mb-6">
                       {industria.productos.map((producto, productIndex) => (
                         <div key={productIndex} className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                          <div className="w-2 h-2 bg-ainsa-red rounded-full mt-2 flex-shrink-0"></div>
                           <p 
-                            className="text-muted-foreground leading-relaxed"
+                            className="text-ainsa-gray leading-relaxed"
                             style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                           >
                             {producto}
@@ -214,20 +214,20 @@ export function IndustriasPage({ onNavigate }: IndustriasPageProps) {
                       ))}
                     </div>
 
-                    <div className="bg-accent/5 rounded-xl p-6 border border-accent/20">
+                    <div className="bg-ainsa-red/5 rounded-xl p-6 border border-ainsa-red/20">
                       <div className="flex items-start space-x-3">
-                        <div className="w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                          <div className="w-2 h-2 bg-accent rounded-full"></div>
+                        <div className="w-6 h-6 bg-ainsa-red/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                          <div className="w-2 h-2 bg-ainsa-red rounded-full"></div>
                         </div>
                         <div>
                           <h4 
-                            className="text-accent mb-2"
+                            className="text-ainsa-red mb-2"
                             style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 600 }}
                           >
                             Beneficio:
                           </h4>
                           <p 
-                            className="text-muted-foreground leading-relaxed"
+                            className="text-ainsa-gray leading-relaxed"
                             style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                           >
                             {industria.beneficio}
@@ -256,7 +256,7 @@ export function IndustriasPage({ onNavigate }: IndustriasPageProps) {
       </section>
 
       {/* ¿Por qué elegir AINSA? Section */}
-      <section className="py-20 lg:py-28 bg-muted/30">
+      <section className="py-20 lg:py-28 bg-ainsa-gray/10 dark:bg-ainsa-gray/20/30">
         <div className="container mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -266,7 +266,7 @@ export function IndustriasPage({ onNavigate }: IndustriasPageProps) {
             className="text-center mb-16"
           >
             <h2 
-              className="text-4xl lg:text-5xl mb-6 text-foreground"
+              className="text-4xl lg:text-5xl mb-6 text-ainsa-black dark:text-ainsa-white"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
             >
               ¿Por qué elegir AINSA?
@@ -281,13 +281,13 @@ export function IndustriasPage({ onNavigate }: IndustriasPageProps) {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="text-center bg-background rounded-2xl p-8 border border-border/20 hover:shadow-lg transition-all duration-300"
+                className="text-center bg-ainsa-white dark:bg-ainsa-black rounded-2xl p-8 border border-ainsa-gray/20 hover:shadow-lg transition-all duration-300"
               >
-                <div className="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="w-16 h-16 bg-ainsa-red/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <span className="text-3xl">{ventaja.icon}</span>
                 </div>
                 <h3 
-                  className="text-lg text-foreground leading-snug"
+                  className="text-lg text-ainsa-black dark:text-ainsa-white leading-snug"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 600 }}
                 >
                   {ventaja.title}
@@ -299,23 +299,23 @@ export function IndustriasPage({ onNavigate }: IndustriasPageProps) {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 lg:py-28 bg-background">
+      <section className="py-20 lg:py-28 bg-ainsa-white dark:bg-ainsa-black">
         <div className="container mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-center bg-gradient-to-br from-accent/5 via-primary/5 to-accent/5 rounded-3xl p-12 lg:p-16 border border-accent/20"
+            className="text-center bg-gradient-to-br from-accent/5 via-primary/5 to-accent/5 rounded-3xl p-12 lg:p-16 border border-ainsa-red/20"
           >
             <h2 
-              className="text-4xl lg:text-5xl mb-6 text-foreground"
+              className="text-4xl lg:text-5xl mb-6 text-ainsa-black dark:text-ainsa-white"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
             >
               ¿Tu industria necesita metales de calidad?
             </h2>
             <p 
-              className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto"
+              className="text-xl text-ainsa-gray mb-8 max-w-3xl mx-auto"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               Nuestro equipo de especialistas está listo para asesorarte y encontrar 
@@ -326,7 +326,7 @@ export function IndustriasPage({ onNavigate }: IndustriasPageProps) {
                 onClick={() => onNavigate('contacto')}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-accent hover:bg-accent/90 text-white px-8 py-4 rounded-xl transition-all duration-300"
+                className="bg-ainsa-red hover:bg-ainsa-red/90 text-white px-8 py-4 rounded-xl transition-all duration-300"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 600 }}
               >
                 Solicitar Asesoría Técnica
@@ -335,7 +335,7 @@ export function IndustriasPage({ onNavigate }: IndustriasPageProps) {
                 onClick={() => onNavigate('productos')}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-transparent hover:bg-accent/10 text-accent border border-accent px-8 py-4 rounded-xl transition-all duration-300"
+                className="bg-transparent hover:bg-ainsa-red/10 text-ainsa-red border border-ainsa-red px-8 py-4 rounded-xl transition-all duration-300"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 600 }}
               >
                 Ver Catálogo Completo

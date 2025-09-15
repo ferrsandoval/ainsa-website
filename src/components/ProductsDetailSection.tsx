@@ -120,7 +120,7 @@ export function ProductsDetailSection({ onNavigate }: ProductsDetailSectionProps
             className="text-center mb-16"
           >
             <p 
-              className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-4xl mx-auto"
+              className="text-lg lg:text-xl text-ainsa-gray leading-relaxed max-w-4xl mx-auto"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               Nuestro catálogo está diseñado para cubrir las necesidades de sectores como construcción, minería, 
@@ -148,13 +148,13 @@ export function ProductsDetailSection({ onNavigate }: ProductsDetailSectionProps
                       <span className="text-3xl">{category.icon}</span>
                       <div>
                         <h3 
-                          className="text-2xl lg:text-3xl text-foreground"
+                          className="text-2xl lg:text-3xl text-ainsa-black dark:text-ainsa-white"
                           style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                         >
                           {category.title}
                         </h3>
                         <p 
-                          className="text-accent"
+                          className="text-ainsa-red"
                           style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400, fontStyle: 'italic' }}
                         >
                           {category.subtitle}
@@ -165,9 +165,9 @@ export function ProductsDetailSection({ onNavigate }: ProductsDetailSectionProps
                     <div className="space-y-3 mb-6">
                       {category.items.map((item, itemIndex) => (
                         <div key={itemIndex} className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                          <div className="w-2 h-2 bg-ainsa-red rounded-full mt-2 flex-shrink-0"></div>
                           <p 
-                            className="text-muted-foreground leading-relaxed"
+                            className="text-ainsa-gray leading-relaxed"
                             style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                           >
                             {item}
@@ -181,7 +181,7 @@ export function ProductsDetailSection({ onNavigate }: ProductsDetailSectionProps
                         onClick={() => onNavigate(category.route)}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="bg-accent/10 hover:bg-accent hover:text-white text-accent px-6 py-3 rounded-xl transition-all duration-300 border border-accent/20"
+                        className="bg-ainsa-red/10 hover:bg-ainsa-red hover:text-white text-ainsa-red px-6 py-3 rounded-xl transition-all duration-300 border border-ainsa-red/20"
                         style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                       >
                         Ver más detalles →
@@ -213,15 +213,15 @@ export function ProductsDetailSection({ onNavigate }: ProductsDetailSectionProps
             viewport={{ once: true }}
             className="text-center mt-20"
           >
-            <div className="bg-accent/5 rounded-2xl p-12 border border-accent/20">
+            <div className="bg-ainsa-red/5 rounded-2xl p-12 border border-ainsa-red/20">
               <h3 
-                className="text-3xl lg:text-4xl mb-6 text-foreground"
+                className="text-3xl lg:text-4xl mb-6 text-ainsa-black dark:text-ainsa-white"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
               >
                 ¿Necesitas un producto específico?
               </h3>
               <p 
-                className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto"
+                className="text-lg text-ainsa-gray mb-8 max-w-2xl mx-auto"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 Nuestro equipo de especialistas puede ayudarte a encontrar exactamente lo que necesitas 
@@ -231,7 +231,7 @@ export function ProductsDetailSection({ onNavigate }: ProductsDetailSectionProps
                 <motion.button 
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-accent hover:bg-accent/90 text-white px-8 py-4 rounded-xl shadow-lg transition-all duration-300"
+                  className="bg-ainsa-red hover:bg-ainsa-red/90 text-white px-8 py-4 rounded-xl shadow-lg transition-all duration-300"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   Ver Catálogo Completo
@@ -239,7 +239,7 @@ export function ProductsDetailSection({ onNavigate }: ProductsDetailSectionProps
                 <motion.button 
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-transparent border-2 border-accent text-accent hover:bg-accent hover:text-white px-8 py-4 rounded-xl transition-all duration-300"
+                  className="bg-transparent border-2 border-ainsa-red text-ainsa-red hover:bg-ainsa-red hover:text-white px-8 py-4 rounded-xl transition-all duration-300"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   Solicitar Cotización

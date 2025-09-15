@@ -60,31 +60,31 @@ export function AluminioPage({ onNavigate }: AluminioPageProps) {
   return (
     <main className="pt-20">
       {/* Page Header */}
-      <section className="py-16 lg:py-24 bg-muted/30">
+      <section className="py-16 lg:py-24 bg-ainsa-gray/10 dark:bg-ainsa-gray/20/30">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
               <span 
-                className="caption text-accent bg-background/80 px-4 py-2 rounded-full border border-border/30"
+                className="caption text-ainsa-red bg-ainsa-white dark:bg-ainsa-black/80 px-4 py-2 rounded-full border border-ainsa-gray/30"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 LÍNEA DE PRODUCTOS
               </span>
             </div>
             <h1 
-              className="text-4xl lg:text-6xl xl:text-7xl leading-tight tracking-tight text-foreground mb-6"
+              className="text-4xl lg:text-6xl xl:text-7xl leading-tight tracking-tight text-ainsa-black dark:text-ainsa-white mb-6"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
             >
               Aluminio
               <span 
-                className="block text-accent"
+                className="block text-ainsa-red"
                 style={{ fontStyle: 'italic', fontWeight: 400 }}
               >
                 Industrial
               </span>
             </h1>
             <p 
-              className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
+              className="text-lg lg:text-xl text-ainsa-gray leading-relaxed max-w-3xl mx-auto"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               Ligereza y versatilidad para múltiples aplicaciones. Ofrecemos productos de aluminio 
@@ -113,18 +113,18 @@ export function AluminioPage({ onNavigate }: AluminioPageProps) {
       </SectionTransition>
 
       {/* Products Section */}
-      <section className="py-16 lg:py-24 bg-muted/20">
+      <section className="py-16 lg:py-24 bg-ainsa-gray/10 dark:bg-ainsa-gray/20/20">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 
-                className="text-3xl lg:text-5xl font-bold mb-6 text-foreground"
+                className="text-3xl lg:text-5xl font-bold mb-6 text-ainsa-black dark:text-ainsa-white"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
               >
                 Productos de Aluminio
               </h2>
               <p 
-                className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
+                className="text-lg lg:text-xl text-ainsa-gray leading-relaxed max-w-3xl mx-auto"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 Amplio inventario en aleaciones de alta calidad con certificaciones internacionales 
@@ -136,17 +136,17 @@ export function AluminioPage({ onNavigate }: AluminioPageProps) {
               {aluminioData.map((producto, index) => (
                 <div 
                   key={index}
-                  className="bg-background border border-border/30 rounded-2xl p-8 hover:shadow-lg transition-all duration-300 hover:scale-105"
+                  className="bg-ainsa-white dark:bg-ainsa-black border border-ainsa-gray/30 rounded-2xl p-8 hover:shadow-lg transition-all duration-300 hover:scale-105"
                 >
                   <div className="mb-6">
                     <h3 
-                      className="text-2xl lg:text-3xl font-bold text-foreground mb-3"
+                      className="text-2xl lg:text-3xl font-bold text-ainsa-black dark:text-ainsa-white mb-3"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                     >
                       {producto.category}
                     </h3>
                     <p 
-                      className="text-muted-foreground"
+                      className="text-ainsa-gray"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                     >
                       {producto.description}
@@ -155,7 +155,7 @@ export function AluminioPage({ onNavigate }: AluminioPageProps) {
 
                   <div className="mb-6">
                     <h4 
-                      className="font-semibold text-foreground mb-3"
+                      className="font-semibold text-ainsa-black dark:text-ainsa-white mb-3"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 600 }}
                     >
                       Especificaciones:
@@ -164,10 +164,10 @@ export function AluminioPage({ onNavigate }: AluminioPageProps) {
                       {producto.specifications.map((spec, specIndex) => (
                         <li 
                           key={specIndex}
-                          className="flex items-start space-x-2 text-muted-foreground"
+                          className="flex items-start space-x-2 text-ainsa-gray"
                           style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                         >
-                          <span className="text-accent mt-1">•</span>
+                          <span className="text-ainsa-red mt-1">•</span>
                           <span>{spec}</span>
                         </li>
                       ))}
@@ -176,7 +176,7 @@ export function AluminioPage({ onNavigate }: AluminioPageProps) {
 
                   <div>
                     <h4 
-                      className="font-semibold text-foreground mb-3"
+                      className="font-semibold text-ainsa-black dark:text-ainsa-white mb-3"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 600 }}
                     >
                       Aplicaciones Principales:
@@ -185,7 +185,7 @@ export function AluminioPage({ onNavigate }: AluminioPageProps) {
                       {producto.applications.map((app, appIndex) => (
                         <span 
                           key={appIndex}
-                          className="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm border border-accent/20"
+                          className="bg-accent/10 text-ainsa-red px-3 py-1 rounded-full text-sm border border-accent/20"
                           style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                         >
                           {app}
@@ -206,13 +206,13 @@ export function AluminioPage({ onNavigate }: AluminioPageProps) {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 
-                className="text-3xl lg:text-5xl font-bold mb-6 text-foreground"
+                className="text-3xl lg:text-5xl font-bold mb-6 text-ainsa-black dark:text-ainsa-white"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
               >
                 Sectores de Aplicación
               </h2>
               <p 
-                className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
+                className="text-lg lg:text-xl text-ainsa-gray leading-relaxed max-w-3xl mx-auto"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 El aluminio es la solución ideal para proyectos que requieren resistencia, 
@@ -224,17 +224,17 @@ export function AluminioPage({ onNavigate }: AluminioPageProps) {
               {applications.map((application, index) => (
                 <div 
                   key={index}
-                  className="bg-background border border-border/30 rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300 hover:scale-105"
+                  className="bg-ainsa-white dark:bg-ainsa-black border border-ainsa-gray/30 rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300 hover:scale-105"
                 >
                   <div className="text-4xl mb-4">{application.icon}</div>
                   <h3 
-                    className="text-lg font-semibold text-foreground mb-2"
+                    className="text-lg font-semibold text-ainsa-black dark:text-ainsa-white mb-2"
                     style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 600 }}
                   >
                     {application.sector}
                   </h3>
                   <p 
-                    className="text-sm text-muted-foreground"
+                    className="text-sm text-ainsa-gray"
                     style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                   >
                     {application.description}
@@ -247,11 +247,11 @@ export function AluminioPage({ onNavigate }: AluminioPageProps) {
       </section>
 
       {/* Advantages Section */}
-      <section className="py-16 lg:py-24 bg-muted/20">
+      <section className="py-16 lg:py-24 bg-ainsa-gray/10 dark:bg-ainsa-gray/20/20">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="max-w-6xl mx-auto text-center">
             <h2 
-              className="text-3xl lg:text-5xl font-bold mb-12 text-foreground"
+              className="text-3xl lg:text-5xl font-bold mb-12 text-ainsa-black dark:text-ainsa-white"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
             >
               Ventajas del Aluminio
@@ -277,17 +277,17 @@ export function AluminioPage({ onNavigate }: AluminioPageProps) {
               ].map((advantage, index) => (
                 <div 
                   key={index}
-                  className="bg-background border border-border/30 rounded-2xl p-8"
+                  className="bg-ainsa-white dark:bg-ainsa-black border border-ainsa-gray/30 rounded-2xl p-8"
                 >
                   <div className="text-4xl mb-4">{advantage.icon}</div>
                   <h3 
-                    className="text-xl font-bold text-foreground mb-3"
+                    className="text-xl font-bold text-ainsa-black dark:text-ainsa-white mb-3"
                     style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                   >
                     {advantage.title}
                   </h3>
                   <p 
-                    className="text-muted-foreground"
+                    className="text-ainsa-gray"
                     style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                   >
                     {advantage.description}

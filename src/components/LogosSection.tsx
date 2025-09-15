@@ -6,37 +6,37 @@ export function LogosSection() {
       name: "GLOBAL CHAMBER", 
       description: "Cámara Global de Comercio",
       logo: "GC",
-      color: "from-green-500/20 to-blue-500/20"
+      color: "from-ainsa-red/20 to-ainsa-gray/20"
     },
     { 
       name: "INOX", 
       description: "Asociación Mexicana del Inoxidable",
       logo: "IN",
-      color: "from-gray-500/20 to-slate-500/20"
+      color: "from-ainsa-gray/20 to-ainsa-gray/30"
     },
     { 
       name: "SONORA", 
       description: "Gobierno del Estado",
       logo: "SO",
-      color: "from-orange-500/20 to-red-500/20"
+      color: "from-ainsa-red/20 to-ainsa-red/30"
     },
     { 
       name: "CANACINTRA", 
       description: "Cámara Nacional de la Industria",
       logo: "CA",
-      color: "from-red-500/20 to-orange-500/20"
+      color: "from-ainsa-red/30 to-ainsa-red/20"
     },
     { 
       name: "TECNOLÓGICO", 
       description: "Instituto Tecnológico de Mexicali",
       logo: "TM",
-      color: "from-blue-500/20 to-indigo-500/20"
+      color: "from-ainsa-gray/20 to-ainsa-red/20"
     },
     { 
       name: "IRVING®", 
       description: "Rejillas Industriales",
       logo: "IR",
-      color: "from-blue-600/20 to-cyan-500/20"
+      color: "from-ainsa-red/20 to-ainsa-gray/20"
     }
   ];
 
@@ -86,13 +86,13 @@ export function LogosSection() {
             className="text-center mb-12"
           >
             <span 
-              className="caption text-muted-foreground mb-4 block bg-muted px-6 py-3 rounded-full inline-block"
+              className="caption text-ainsa-gray mb-4 block bg-ainsa-gray/10 dark:bg-ainsa-gray/20 px-6 py-3 rounded-full inline-block"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               CERTIFICACIONES Y ALIANZAS
             </span>
             <h2 
-              className="text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground leading-tight"
+              className="text-3xl lg:text-4xl xl:text-5xl font-bold text-ainsa-black dark:text-ainsa-white leading-tight"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
             >
               Respaldo de Calidad y
@@ -104,7 +104,7 @@ export function LogosSection() {
               </span>
             </h2>
             <p 
-              className="text-base lg:text-lg text-muted-foreground mt-4 max-w-2xl mx-auto leading-relaxed"
+              className="text-base lg:text-lg text-ainsa-gray mt-4 max-w-2xl mx-auto leading-relaxed"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               Nuestras alianzas estratégicas y certificaciones internacionales garantizan productos 
@@ -124,13 +124,13 @@ export function LogosSection() {
             >
               <div className="text-center mb-8">
                 <h3 
-                  className="text-2xl lg:text-3xl font-bold text-foreground mb-2"
+                  className="text-2xl lg:text-3xl font-bold text-ainsa-black dark:text-ainsa-white mb-2"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                 >
                   Alianzas Estratégicas
                 </h3>
                 <p 
-                  className="text-sm text-muted-foreground"
+                  className="text-sm text-ainsa-gray"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   Colaboramos con organizaciones líderes
@@ -150,20 +150,20 @@ export function LogosSection() {
                     <div className="bg-card border border-border/50 rounded-xl p-4 hover:border-accent/30 hover:shadow-lg transition-all duration-300 text-center h-full">
                       <div className={`w-12 h-12 bg-gradient-to-br ${alliance.color} border border-border/30 rounded-lg flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300`}>
                         <span 
-                          className="text-sm font-bold text-foreground"
+                          className="text-sm font-bold text-ainsa-black dark:text-ainsa-white"
                           style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                         >
                           {alliance.logo}
                         </span>
                       </div>
                       <h4 
-                        className="font-bold text-foreground mb-1 text-xs"
+                        className="font-bold text-ainsa-black dark:text-ainsa-white mb-1 text-xs"
                         style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                       >
                         {alliance.name}
                       </h4>
                       <p 
-                        className="text-xs text-muted-foreground leading-tight"
+                        className="text-xs text-ainsa-gray leading-tight"
                         style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                       >
                         {alliance.description}
@@ -183,13 +183,13 @@ export function LogosSection() {
             >
               <div className="text-center mb-8">
                 <h3 
-                  className="text-2xl lg:text-3xl font-bold text-foreground mb-2"
+                  className="text-2xl lg:text-3xl font-bold text-ainsa-black dark:text-ainsa-white mb-2"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                 >
                   Normas Internacionales
                 </h3>
                 <p 
-                  className="text-sm text-muted-foreground"
+                  className="text-sm text-ainsa-gray"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   Certificaciones que avalan la calidad superior
@@ -216,7 +216,7 @@ export function LogosSection() {
                     </div>
                     
                     <h4 
-                      className="font-bold text-foreground mb-1 text-sm"
+                      className="font-bold text-ainsa-black dark:text-ainsa-white mb-1 text-sm"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                     >
                       {norm.name}
@@ -228,7 +228,7 @@ export function LogosSection() {
                       {norm.fullName}
                     </h5>
                     <p 
-                      className="text-xs text-muted-foreground leading-tight"
+                      className="text-xs text-ainsa-gray leading-tight"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                     >
                       {norm.description}
@@ -252,13 +252,13 @@ export function LogosSection() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               <div>
                 <div 
-                  className="text-2xl lg:text-3xl font-bold text-foreground mb-1"
+                  className="text-2xl lg:text-3xl font-bold text-ainsa-black dark:text-ainsa-white mb-1"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                 >
                   100%
                 </div>
                 <p 
-                  className="text-muted-foreground uppercase tracking-wider text-xs"
+                  className="text-ainsa-gray uppercase tracking-wider text-xs"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   Materiales Certificados
@@ -266,13 +266,13 @@ export function LogosSection() {
               </div>
               <div>
                 <div 
-                  className="text-2xl lg:text-3xl font-bold text-foreground mb-1"
+                  className="text-2xl lg:text-3xl font-bold text-ainsa-black dark:text-ainsa-white mb-1"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                 >
                   24/7
                 </div>
                 <p 
-                  className="text-muted-foreground uppercase tracking-wider text-xs"
+                  className="text-ainsa-gray uppercase tracking-wider text-xs"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   Soporte Técnico
@@ -280,13 +280,13 @@ export function LogosSection() {
               </div>
               <div>
                 <div 
-                  className="text-2xl lg:text-3xl font-bold text-foreground mb-1"
+                  className="text-2xl lg:text-3xl font-bold text-ainsa-black dark:text-ainsa-white mb-1"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                 >
                   48h
                 </div>
                 <p 
-                  className="text-muted-foreground uppercase tracking-wider text-xs"
+                  className="text-ainsa-gray uppercase tracking-wider text-xs"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   Tiempo de Entrega
@@ -294,13 +294,13 @@ export function LogosSection() {
               </div>
               <div>
                 <div 
-                  className="text-2xl lg:text-3xl font-bold text-foreground mb-1"
+                  className="text-2xl lg:text-3xl font-bold text-ainsa-black dark:text-ainsa-white mb-1"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                 >
                   99.8%
                 </div>
                 <p 
-                  className="text-muted-foreground uppercase tracking-wider text-xs"
+                  className="text-ainsa-gray uppercase tracking-wider text-xs"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   Satisfacción Cliente

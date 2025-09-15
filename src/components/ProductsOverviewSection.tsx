@@ -17,8 +17,8 @@ export function ProductsOverviewSection({ onNavigate }: ProductsOverviewSectionP
         />
         
         {/* Overlay gradients */}
-        <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/70 to-background/90 dark:from-background/95 dark:via-background/80 dark:to-background/95" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/60 via-transparent to-background/60 dark:from-background/80 dark:via-transparent dark:to-background/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-ainsa-white/90 via-ainsa-white/70 to-ainsa-white/90 dark:from-ainsa-black/95 dark:via-ainsa-black/80 dark:to-ainsa-black/95" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ainsa-white/60 via-transparent to-ainsa-white/60 dark:from-ainsa-black/80 dark:via-transparent dark:to-ainsa-black/80" />
       </div>
 
       {/* Content */}
@@ -28,7 +28,7 @@ export function ProductsOverviewSection({ onNavigate }: ProductsOverviewSectionP
           {/* Eyebrow text */}
           <div className="text-center mb-12">
             <span 
-              className="caption text-muted-foreground bg-background/80 dark:bg-background/60 px-6 py-3 rounded-full backdrop-blur-sm border border-border/30"
+              className="caption text-ainsa-gray bg-ainsa-white/80 dark:bg-ainsa-black/60 px-6 py-3 rounded-full backdrop-blur-sm border border-ainsa-gray/30"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               NUESTROS PRODUCTOS
@@ -38,7 +38,7 @@ export function ProductsOverviewSection({ onNavigate }: ProductsOverviewSectionP
           {/* Main heading */}
           <div className="text-center mb-20">
             <h2 
-              className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[0.9] tracking-tight mb-8 text-foreground"
+              className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[0.9] tracking-tight mb-8 text-ainsa-black dark:text-ainsa-white"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
             >
               La Mayor Variedad de
@@ -148,7 +148,7 @@ export function ProductsOverviewSection({ onNavigate }: ProductsOverviewSectionP
           <div className="text-center">
             <Button 
               onClick={() => onNavigate('productos')}
-              className="bg-accent hover:bg-accent/90 text-accent-foreground px-10 py-6 h-auto font-medium text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              className="bg-ainsa-red hover:bg-ainsa-red/90 text-ainsa-white px-10 py-6 h-auto font-medium text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               Ver Catálogo Completo

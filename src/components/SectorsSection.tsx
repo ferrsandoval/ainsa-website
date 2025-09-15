@@ -31,7 +31,7 @@ export function SectorsSection() {
   ];
 
   return (
-    <section className="py-24 lg:py-32 bg-background">
+    <section className="py-24 lg:py-32 bg-ainsa-white dark:bg-ainsa-black">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
@@ -43,25 +43,25 @@ export function SectorsSection() {
             className="text-center mb-16"
           >
             <span 
-              className="caption text-accent bg-muted/50 px-4 py-2 rounded-full border border-border/30 mb-6 inline-block"
+              className="caption text-ainsa-red bg-ainsa-gray/10 dark:bg-ainsa-gray/20/50 px-4 py-2 rounded-full border border-ainsa-gray/30 mb-6 inline-block"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               INDUSTRIAS
             </span>
             <h2 
-              className="text-4xl lg:text-5xl xl:text-6xl leading-tight tracking-tight text-foreground mb-6"
+              className="text-4xl lg:text-5xl xl:text-6xl leading-tight tracking-tight text-ainsa-black dark:text-ainsa-white mb-6"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
             >
               Sectores que
               <span 
-                className="block text-accent"
+                className="block text-ainsa-red"
                 style={{ fontStyle: 'italic', fontWeight: 400 }}
               >
                 Atendemos
               </span>
             </h2>
             <p 
-              className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
+              className="text-lg lg:text-xl text-ainsa-gray leading-relaxed max-w-3xl mx-auto"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               Nuestros productos impulsan proyectos en múltiples sectores industriales, 
@@ -78,19 +78,19 @@ export function SectorsSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="group bg-muted/30 rounded-2xl p-8 hover:bg-accent/5 transition-colors duration-300 border border-border/30"
+                className="group bg-ainsa-gray/10 dark:bg-ainsa-gray/20/30 rounded-2xl p-8 hover:bg-ainsa-red/5 transition-colors duration-300 border border-ainsa-gray/30"
               >
                 <div className="mb-6">
                   <div className="text-4xl mb-4">{sector.icon}</div>
                   <h3 
-                    className="text-xl lg:text-2xl mb-3 text-foreground group-hover:text-accent transition-colors duration-300"
+                    className="text-xl lg:text-2xl mb-3 text-ainsa-black dark:text-ainsa-white group-hover:text-ainsa-red transition-colors duration-300"
                     style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                   >
                     {sector.title}
                   </h3>
                 </div>
                 <p 
-                  className="text-muted-foreground leading-relaxed"
+                  className="text-ainsa-gray leading-relaxed"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   {sector.description}

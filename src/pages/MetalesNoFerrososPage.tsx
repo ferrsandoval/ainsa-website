@@ -68,31 +68,31 @@ export function MetalesNoFerrososPage({ onNavigate }: MetalesNoFerrososPageProps
   return (
     <main className="pt-20">
       {/* Page Header */}
-      <section className="py-16 lg:py-24 bg-muted/30">
+      <section className="py-16 lg:py-24 bg-ainsa-gray/10 dark:bg-ainsa-gray/20/30">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
               <span 
-                className="caption text-accent bg-background/80 px-4 py-2 rounded-full border border-border/30"
+                className="caption text-ainsa-red bg-ainsa-white dark:bg-ainsa-black/80 px-4 py-2 rounded-full border border-ainsa-gray/30"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 LÍNEA DE PRODUCTOS
               </span>
             </div>
             <h1 
-              className="text-4xl lg:text-6xl xl:text-7xl leading-tight tracking-tight text-foreground mb-6"
+              className="text-4xl lg:text-6xl xl:text-7xl leading-tight tracking-tight text-ainsa-black dark:text-ainsa-white mb-6"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
             >
               Metales
               <span 
-                className="block text-accent"
+                className="block text-ainsa-red"
                 style={{ fontStyle: 'italic', fontWeight: 400 }}
               >
                 No Ferrosos
               </span>
             </h1>
             <p 
-              className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
+              className="text-lg lg:text-xl text-ainsa-gray leading-relaxed max-w-3xl mx-auto"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               Soluciones especiales para ingeniería y manufactura. Cobre, latón, bronce, plomo y zinc 
@@ -121,18 +121,18 @@ export function MetalesNoFerrososPage({ onNavigate }: MetalesNoFerrososPageProps
       </SectionTransition>
 
       {/* Metals Section */}
-      <section className="py-16 lg:py-24 bg-muted/20">
+      <section className="py-16 lg:py-24 bg-ainsa-gray/10 dark:bg-ainsa-gray/20/20">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
               <h2 
-                className="text-3xl lg:text-5xl font-bold mb-6 text-foreground"
+                className="text-3xl lg:text-5xl font-bold mb-6 text-ainsa-black dark:text-ainsa-white"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
               >
                 Metales Disponibles
               </h2>
               <p 
-                className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
+                className="text-lg lg:text-xl text-ainsa-gray leading-relaxed max-w-3xl mx-auto"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 Cada metal no ferroso tiene propiedades únicas que los hacen ideales 
@@ -144,17 +144,17 @@ export function MetalesNoFerrososPage({ onNavigate }: MetalesNoFerrososPageProps
               {metalesData.map((metal, index) => (
                 <div 
                   key={index}
-                  className="bg-background border border-border/30 rounded-2xl p-8 hover:shadow-lg transition-all duration-300"
+                  className="bg-ainsa-white dark:bg-ainsa-black border border-ainsa-gray/30 rounded-2xl p-8 hover:shadow-lg transition-all duration-300"
                 >
                   <div className="mb-6">
                     <h3 
-                      className="text-2xl lg:text-3xl font-bold text-foreground mb-3"
+                      className="text-2xl lg:text-3xl font-bold text-ainsa-black dark:text-ainsa-white mb-3"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                     >
                       {metal.metal}
                     </h3>
                     <p 
-                      className="text-muted-foreground mb-4"
+                      className="text-ainsa-gray mb-4"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                     >
                       {metal.description}
@@ -163,7 +163,7 @@ export function MetalesNoFerrososPage({ onNavigate }: MetalesNoFerrososPageProps
 
                   <div className="mb-6">
                     <h4 
-                      className="font-semibold text-foreground mb-3"
+                      className="font-semibold text-ainsa-black dark:text-ainsa-white mb-3"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 600 }}
                     >
                       Productos Disponibles:
@@ -172,7 +172,7 @@ export function MetalesNoFerrososPage({ onNavigate }: MetalesNoFerrososPageProps
                       {metal.products.map((product, productIndex) => (
                         <span 
                           key={productIndex}
-                          className="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm border border-accent/20"
+                          className="bg-accent/10 text-ainsa-red px-3 py-1 rounded-full text-sm border border-accent/20"
                           style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                         >
                           {product}
@@ -183,7 +183,7 @@ export function MetalesNoFerrososPage({ onNavigate }: MetalesNoFerrososPageProps
 
                   <div className="mb-6">
                     <h4 
-                      className="font-semibold text-foreground mb-3"
+                      className="font-semibold text-ainsa-black dark:text-ainsa-white mb-3"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 600 }}
                     >
                       Propiedades Clave:
@@ -192,10 +192,10 @@ export function MetalesNoFerrososPage({ onNavigate }: MetalesNoFerrososPageProps
                       {metal.properties.map((property, propIndex) => (
                         <li 
                           key={propIndex}
-                          className="flex items-start space-x-2 text-muted-foreground"
+                          className="flex items-start space-x-2 text-ainsa-gray"
                           style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                         >
-                          <span className="text-accent mt-1">•</span>
+                          <span className="text-ainsa-red mt-1">•</span>
                           <span>{property}</span>
                         </li>
                       ))}
@@ -204,7 +204,7 @@ export function MetalesNoFerrososPage({ onNavigate }: MetalesNoFerrososPageProps
 
                   <div>
                     <h4 
-                      className="font-semibold text-foreground mb-3"
+                      className="font-semibold text-ainsa-black dark:text-ainsa-white mb-3"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 600 }}
                     >
                       Aplicaciones Principales:
@@ -213,7 +213,7 @@ export function MetalesNoFerrososPage({ onNavigate }: MetalesNoFerrososPageProps
                       {metal.applications.map((app, appIndex) => (
                         <span 
                           key={appIndex}
-                          className="bg-muted/50 text-foreground px-3 py-1 rounded-full text-sm border border-border/30"
+                          className="bg-ainsa-gray/10 dark:bg-ainsa-gray/20/50 text-ainsa-black dark:text-ainsa-white px-3 py-1 rounded-full text-sm border border-ainsa-gray/30"
                           style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                         >
                           {app}
@@ -234,13 +234,13 @@ export function MetalesNoFerrososPage({ onNavigate }: MetalesNoFerrososPageProps
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 
-                className="text-3xl lg:text-5xl font-bold mb-6 text-foreground"
+                className="text-3xl lg:text-5xl font-bold mb-6 text-ainsa-black dark:text-ainsa-white"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
               >
                 Sectores de Aplicación
               </h2>
               <p 
-                className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
+                className="text-lg lg:text-xl text-ainsa-gray leading-relaxed max-w-3xl mx-auto"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 Los metales no ferrosos son esenciales en industrias que requieren 
@@ -252,19 +252,19 @@ export function MetalesNoFerrososPage({ onNavigate }: MetalesNoFerrososPageProps
               {applications.map((application, index) => (
                 <div 
                   key={index}
-                  className="bg-background border border-border/30 rounded-2xl p-8 hover:shadow-lg transition-all duration-300"
+                  className="bg-ainsa-white dark:bg-ainsa-black border border-ainsa-gray/30 rounded-2xl p-8 hover:shadow-lg transition-all duration-300"
                 >
                   <div className="flex items-start space-x-4">
                     <div className="text-4xl">{application.icon}</div>
                     <div className="flex-1">
                       <h3 
-                        className="text-xl font-bold text-foreground mb-2"
+                        className="text-xl font-bold text-ainsa-black dark:text-ainsa-white mb-2"
                         style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                       >
                         {application.sector}
                       </h3>
                       <p 
-                        className="text-muted-foreground mb-4"
+                        className="text-ainsa-gray mb-4"
                         style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                       >
                         {application.description}
@@ -273,7 +273,7 @@ export function MetalesNoFerrososPage({ onNavigate }: MetalesNoFerrososPageProps
                         {application.metals.map((metal, metalIndex) => (
                           <span 
                             key={metalIndex}
-                            className="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm border border-accent/20"
+                            className="bg-accent/10 text-ainsa-red px-3 py-1 rounded-full text-sm border border-accent/20"
                             style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                           >
                             {metal}
@@ -290,11 +290,11 @@ export function MetalesNoFerrososPage({ onNavigate }: MetalesNoFerrososPageProps
       </section>
 
       {/* Technical Specifications */}
-      <section className="py-16 lg:py-24 bg-muted/20">
+      <section className="py-16 lg:py-24 bg-ainsa-gray/10 dark:bg-ainsa-gray/20/20">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="max-w-6xl mx-auto text-center">
             <h2 
-              className="text-3xl lg:text-5xl font-bold mb-12 text-foreground"
+              className="text-3xl lg:text-5xl font-bold mb-12 text-ainsa-black dark:text-ainsa-white"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
             >
               Especificaciones Técnicas
@@ -320,17 +320,17 @@ export function MetalesNoFerrososPage({ onNavigate }: MetalesNoFerrososPageProps
               ].map((spec, index) => (
                 <div 
                   key={index}
-                  className="bg-background border border-border/30 rounded-2xl p-8"
+                  className="bg-ainsa-white dark:bg-ainsa-black border border-ainsa-gray/30 rounded-2xl p-8"
                 >
                   <div className="text-4xl mb-4">{spec.icon}</div>
                   <h3 
-                    className="text-xl font-bold text-foreground mb-3"
+                    className="text-xl font-bold text-ainsa-black dark:text-ainsa-white mb-3"
                     style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                   >
                     {spec.title}
                   </h3>
                   <p 
-                    className="text-muted-foreground"
+                    className="text-ainsa-gray"
                     style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                   >
                     {spec.description}

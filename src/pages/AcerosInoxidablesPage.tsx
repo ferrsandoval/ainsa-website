@@ -43,31 +43,31 @@ export function AcerosInoxidablesPage({ onNavigate }: AcerosInoxidablesPageProps
   return (
     <main className="pt-20">
       {/* Page Header */}
-      <section className="py-16 lg:py-24 bg-muted/30">
+      <section className="py-16 lg:py-24 bg-ainsa-gray/10 dark:bg-ainsa-gray/20">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
               <span 
-                className="caption text-accent bg-background/80 px-4 py-2 rounded-full border border-border/30"
+                className="caption text-ainsa-red bg-ainsa-white dark:bg-ainsa-black/80 px-4 py-2 rounded-full border border-ainsa-gray/30"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 LÍNEA DE PRODUCTOS
               </span>
             </div>
             <h1 
-              className="text-4xl lg:text-6xl xl:text-7xl leading-tight tracking-tight text-foreground mb-6"
+              className="text-4xl lg:text-6xl xl:text-7xl leading-tight tracking-tight text-ainsa-black dark:text-ainsa-white mb-6"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
             >
               Aceros Inoxidables
               <span 
-                className="block text-accent"
+                className="block text-ainsa-red"
                 style={{ fontStyle: 'italic', fontWeight: 400 }}
               >
                 Austeníticos y Ferríticos
               </span>
             </h1>
             <p 
-              className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
+              className="text-lg lg:text-xl text-ainsa-gray leading-relaxed max-w-3xl mx-auto"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               Resistencia, durabilidad y acabado impecable. Ofrecemos la más amplia selección 
@@ -101,13 +101,13 @@ export function AcerosInoxidablesPage({ onNavigate }: AcerosInoxidablesPageProps
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 
-                className="text-3xl lg:text-5xl font-bold mb-6 text-foreground"
+                className="text-3xl lg:text-5xl font-bold mb-6 text-ainsa-black dark:text-ainsa-white"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
               >
                 Nuestros Productos
               </h2>
               <p 
-                className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
+                className="text-lg lg:text-xl text-ainsa-gray leading-relaxed max-w-3xl mx-auto"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 Amplio inventario en láminas, placas, tubos, conexiones y accesorios para 
@@ -119,17 +119,17 @@ export function AcerosInoxidablesPage({ onNavigate }: AcerosInoxidablesPageProps
               {acerosData.map((acero, index) => (
                 <div 
                   key={index}
-                  className="bg-background border border-border/30 rounded-2xl p-8 hover:shadow-lg transition-all duration-300 hover:scale-105"
+                  className="bg-ainsa-white dark:bg-ainsa-black border border-ainsa-gray/30 rounded-2xl p-8 hover:shadow-lg transition-all duration-300 hover:scale-105"
                 >
                   <div className="mb-6">
                     <h3 
-                      className="text-2xl lg:text-3xl font-bold text-foreground mb-3"
+                      className="text-2xl lg:text-3xl font-bold text-ainsa-black dark:text-ainsa-white mb-3"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                     >
                       {acero.category}
                     </h3>
                     <p 
-                      className="text-muted-foreground"
+                      className="text-ainsa-gray"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                     >
                       {acero.description}
@@ -138,7 +138,7 @@ export function AcerosInoxidablesPage({ onNavigate }: AcerosInoxidablesPageProps
 
                   <div className="mb-6">
                     <h4 
-                      className="font-semibold text-foreground mb-3"
+                      className="font-semibold text-ainsa-black dark:text-ainsa-white mb-3"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 600 }}
                     >
                       Especificaciones:
@@ -147,10 +147,10 @@ export function AcerosInoxidablesPage({ onNavigate }: AcerosInoxidablesPageProps
                       {acero.specifications.map((spec, specIndex) => (
                         <li 
                           key={specIndex}
-                          className="flex items-start space-x-2 text-muted-foreground"
+                          className="flex items-start space-x-2 text-ainsa-gray"
                           style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                         >
-                          <span className="text-accent mt-1">•</span>
+                          <span className="text-ainsa-red mt-1">•</span>
                           <span>{spec}</span>
                         </li>
                       ))}
@@ -159,7 +159,7 @@ export function AcerosInoxidablesPage({ onNavigate }: AcerosInoxidablesPageProps
 
                   <div>
                     <h4 
-                      className="font-semibold text-foreground mb-3"
+                      className="font-semibold text-ainsa-black dark:text-ainsa-white mb-3"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 600 }}
                     >
                       Aplicaciones Principales:
@@ -168,7 +168,7 @@ export function AcerosInoxidablesPage({ onNavigate }: AcerosInoxidablesPageProps
                       {acero.applications.map((app, appIndex) => (
                         <span 
                           key={appIndex}
-                          className="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm border border-accent/20"
+                          className="bg-accent/10 text-ainsa-red px-3 py-1 rounded-full text-sm border border-accent/20"
                           style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                         >
                           {app}
@@ -189,13 +189,13 @@ export function AcerosInoxidablesPage({ onNavigate }: AcerosInoxidablesPageProps
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 
-                className="text-3xl lg:text-5xl font-bold mb-6 text-foreground"
+                className="text-3xl lg:text-5xl font-bold mb-6 text-ainsa-black dark:text-ainsa-white"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
               >
                 Formatos Disponibles
               </h2>
               <p 
-                className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
+                className="text-lg lg:text-xl text-ainsa-gray leading-relaxed max-w-3xl mx-auto"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 Disponemos de inventario permanente en múltiples presentaciones 
@@ -214,16 +214,16 @@ export function AcerosInoxidablesPage({ onNavigate }: AcerosInoxidablesPageProps
               ].map((item, index) => (
                 <div 
                   key={index}
-                  className="bg-background border border-border/30 rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300 hover:scale-105"
+                  className="bg-ainsa-white dark:bg-ainsa-black border border-ainsa-gray/30 rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300 hover:scale-105"
                 >
                   <h3 
-                    className="text-lg font-semibold text-foreground mb-2"
+                    className="text-lg font-semibold text-ainsa-black dark:text-ainsa-white mb-2"
                     style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 600 }}
                   >
                     {item.format}
                   </h3>
                   <p 
-                    className="text-sm text-muted-foreground"
+                    className="text-sm text-ainsa-gray"
                     style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                   >
                     {item.sizes}

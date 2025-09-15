@@ -73,20 +73,20 @@ export function PorQueInoxidablePage({ onNavigate }: PorQueInoxidablePageProps) 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.4, delay: 0.2 }}
-              className="caption text-muted-foreground bg-background/80 dark:bg-background/60 px-4 py-2 rounded-full backdrop-blur-sm border border-border/30 mb-8 inline-block"
+              className="caption text-ainsa-gray bg-ainsa-white dark:bg-ainsa-black/80 dark:bg-ainsa-white dark:bg-ainsa-black/60 px-4 py-2 rounded-full backdrop-blur-sm border border-ainsa-gray/30 mb-8 inline-block"
             >
               REVOLUCIÓN INOXIDABLE
             </motion.span>
             
             <h1 
-              className="text-3xl sm:text-4xl lg:text-6xl tracking-tight mb-6 text-foreground"
+              className="text-3xl sm:text-4xl lg:text-6xl tracking-tight mb-6 text-ainsa-black dark:text-ainsa-white"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
             >
               ¿Por qué inoxidable?
             </h1>
             
             <p 
-              className="text-lg lg:text-xl text-accent dark:text-muted-foreground leading-relaxed max-w-3xl mx-auto"
+              className="text-lg lg:text-xl text-ainsa-red dark:text-ainsa-gray leading-relaxed max-w-3xl mx-auto"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               Descubre las ventajas competitivas del acero inoxidable y por qué es el material de elección para aplicaciones críticas.
@@ -106,7 +106,7 @@ export function PorQueInoxidablePage({ onNavigate }: PorQueInoxidablePageProps) 
             className="text-center mb-16"
           >
             <h2 
-              className="text-2xl sm:text-3xl lg:text-4xl mb-6 text-foreground"
+              className="text-2xl sm:text-3xl lg:text-4xl mb-6 text-ainsa-black dark:text-ainsa-white"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
             >
               Ventajas competitivas del acero inoxidable
@@ -124,20 +124,20 @@ export function PorQueInoxidablePage({ onNavigate }: PorQueInoxidablePageProps) 
                 className="text-center lg:text-left"
               >
                 <div className="flex justify-center lg:justify-start mb-6">
-                  <div className="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center text-accent">
+                  <div className="w-16 h-16 bg-ainsa-red/10 rounded-2xl flex items-center justify-center text-ainsa-red">
                     {ventaja.icon}
                   </div>
                 </div>
                 
                 <h3 
-                  className="text-xl lg:text-2xl mb-4 text-foreground"
+                  className="text-xl lg:text-2xl mb-4 text-ainsa-black dark:text-ainsa-white"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 600 }}
                 >
                   {ventaja.title}
                 </h3>
                 
                 <p 
-                  className="text-muted-foreground leading-relaxed"
+                  className="text-ainsa-gray leading-relaxed"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   {ventaja.description}
@@ -149,7 +149,7 @@ export function PorQueInoxidablePage({ onNavigate }: PorQueInoxidablePageProps) 
       </section>
 
       {/* Resistencia a la corrosión */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-ainsa-gray/10 dark:bg-ainsa-gray/20/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <motion.div
@@ -172,9 +172,9 @@ export function PorQueInoxidablePage({ onNavigate }: PorQueInoxidablePageProps) 
               viewport={{ once: true }}
             >
               <div className="flex items-center mb-6">
-                <Shield className="w-8 h-8 text-accent mr-3" />
+                <Shield className="w-8 h-8 text-ainsa-red mr-3" />
                 <span 
-                  className="caption text-accent"
+                  className="caption text-ainsa-red"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                 >
                   PROTECCIÓN NATURAL
@@ -182,14 +182,14 @@ export function PorQueInoxidablePage({ onNavigate }: PorQueInoxidablePageProps) 
               </div>
               
               <h3 
-                className="text-2xl lg:text-3xl mb-6 text-foreground"
+                className="text-2xl lg:text-3xl mb-6 text-ainsa-black dark:text-ainsa-white"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 600 }}
               >
                 Resistencia a la corrosión
               </h3>
               
               <p 
-                className="text-muted-foreground leading-relaxed mb-6"
+                className="text-ainsa-gray leading-relaxed mb-6"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 Su resistencia a la corrosión se debe al hecho de que se autoprotege mediante una capa pasiva. 
@@ -205,9 +205,9 @@ export function PorQueInoxidablePage({ onNavigate }: PorQueInoxidablePageProps) 
                   "Durabilidad a largo plazo"
                 ].map((benefit, index) => (
                   <div key={index} className="flex items-center space-x-3">
-                    <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-ainsa-red flex-shrink-0" />
                     <span 
-                      className="text-muted-foreground"
+                      className="text-ainsa-gray"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                     >
                       {benefit}
@@ -231,13 +231,13 @@ export function PorQueInoxidablePage({ onNavigate }: PorQueInoxidablePageProps) 
             className="text-center mb-16"
           >
             <h2 
-              className="text-2xl sm:text-3xl lg:text-4xl mb-6 text-foreground"
+              className="text-2xl sm:text-3xl lg:text-4xl mb-6 text-ainsa-black dark:text-ainsa-white"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
             >
               Sectores de aplicación
             </h2>
             <p 
-              className="text-lg text-muted-foreground max-w-3xl mx-auto"
+              className="text-lg text-ainsa-gray max-w-3xl mx-auto"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               El acero inoxidable encuentra aplicación en una amplia variedad de industrias y sectores, 
@@ -254,7 +254,7 @@ export function PorQueInoxidablePage({ onNavigate }: PorQueInoxidablePageProps) 
             className="mb-16"
           >
             <h3 
-              className="text-xl lg:text-2xl mb-8 text-foreground text-center"
+              className="text-xl lg:text-2xl mb-8 text-ainsa-black dark:text-ainsa-white text-center"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 600 }}
             >
               Aplicaciones Industriales
@@ -268,15 +268,15 @@ export function PorQueInoxidablePage({ onNavigate }: PorQueInoxidablePageProps) 
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.4, delay: index * 0.05 }}
                   viewport={{ once: true }}
-                  className="bg-background border border-border/30 rounded-xl p-4 text-center hover:shadow-lg transition-shadow"
+                  className="bg-ainsa-white dark:bg-ainsa-black border border-ainsa-gray/30 rounded-xl p-4 text-center hover:shadow-lg transition-shadow"
                 >
                   <div className="flex justify-center mb-3">
-                    <div className="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center text-accent">
+                    <div className="w-10 h-10 bg-ainsa-red/10 rounded-lg flex items-center justify-center text-ainsa-red">
                       {aplicacion.icon}
                     </div>
                   </div>
                   <span 
-                    className="text-sm text-foreground"
+                    className="text-sm text-ainsa-black dark:text-ainsa-white"
                     style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                   >
                     {aplicacion.name}
@@ -294,7 +294,7 @@ export function PorQueInoxidablePage({ onNavigate }: PorQueInoxidablePageProps) 
             viewport={{ once: true }}
           >
             <h3 
-              className="text-xl lg:text-2xl mb-8 text-foreground text-center"
+              className="text-xl lg:text-2xl mb-8 text-ainsa-black dark:text-ainsa-white text-center"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 600 }}
             >
               Aplicaciones Comerciales y Domésticas
@@ -308,15 +308,15 @@ export function PorQueInoxidablePage({ onNavigate }: PorQueInoxidablePageProps) 
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.4, delay: index * 0.05 }}
                   viewport={{ once: true }}
-                  className="bg-background border border-border/30 rounded-xl p-4 text-center hover:shadow-lg transition-shadow"
+                  className="bg-ainsa-white dark:bg-ainsa-black border border-ainsa-gray/30 rounded-xl p-4 text-center hover:shadow-lg transition-shadow"
                 >
                   <div className="flex justify-center mb-3">
-                    <div className="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center text-accent">
+                    <div className="w-10 h-10 bg-ainsa-red/10 rounded-lg flex items-center justify-center text-ainsa-red">
                       {aplicacion.icon}
                     </div>
                   </div>
                   <span 
-                    className="text-sm text-foreground"
+                    className="text-sm text-ainsa-black dark:text-ainsa-white"
                     style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                   >
                     {aplicacion.name}
@@ -355,14 +355,14 @@ export function PorQueInoxidablePage({ onNavigate }: PorQueInoxidablePageProps) 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
                 onClick={() => onNavigate?.('productos')}
-                className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-4 rounded-xl font-medium transition-colors"
+                className="bg-ainsa-red hover:bg-ainsa-red/90 text-ainsa-red-foreground px-8 py-4 rounded-xl font-medium transition-colors"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 Ver Productos
               </button>
               <button 
                 onClick={() => onNavigate?.('contacto')}
-                className="bg-transparent border-2 border-background text-background hover:bg-background hover:text-foreground px-8 py-4 rounded-xl font-medium transition-colors"
+                className="bg-transparent border-2 border-background text-background hover:bg-ainsa-white dark:bg-ainsa-black hover:text-ainsa-black dark:text-ainsa-white px-8 py-4 rounded-xl font-medium transition-colors"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 Contactar Experto

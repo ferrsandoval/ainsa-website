@@ -17,8 +17,8 @@ export function CTASection({ onNavigate }: CTASectionProps) {
         />
         
         {/* Dark overlay for CTA section */}
-        <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/85 to-background/95 dark:from-background/98 dark:via-background/90 dark:to-background/98" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-transparent to-background/80 dark:from-background/90 dark:via-transparent dark:to-background/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-ainsa-white/95 via-ainsa-white/85 to-ainsa-white/95 dark:from-ainsa-black/98 dark:via-ainsa-black/90 dark:to-ainsa-black/98" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ainsa-white/80 via-transparent to-ainsa-white/80 dark:from-ainsa-black/90 dark:via-transparent dark:to-ainsa-black/90" />
       </div>
 
       {/* Content */}
@@ -28,7 +28,7 @@ export function CTASection({ onNavigate }: CTASectionProps) {
           {/* Eyebrow text */}
           <div className="mb-12">
             <span 
-              className="caption text-muted-foreground bg-background/80 dark:bg-background/60 px-6 py-3 rounded-full backdrop-blur-sm border border-border/30"
+              className="caption text-ainsa-gray bg-ainsa-white/80 dark:bg-ainsa-black/60 px-6 py-3 rounded-full backdrop-blur-sm border border-ainsa-gray/30"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               COMENZEMOS A TRABAJAR JUNTOS
@@ -37,7 +37,7 @@ export function CTASection({ onNavigate }: CTASectionProps) {
           
           {/* Main heading */}
           <h2 
-            className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[0.9] tracking-tight mb-8 text-foreground"
+            className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[0.9] tracking-tight mb-8 text-ainsa-black dark:text-ainsa-white"
             style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
           >
             Contáctanos y cotiza
@@ -105,7 +105,7 @@ export function CTASection({ onNavigate }: CTASectionProps) {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <Button 
-              className="bg-accent hover:bg-accent/90 text-accent-foreground px-10 py-6 h-auto font-medium text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              className="bg-ainsa-red hover:bg-ainsa-red/90 text-ainsa-white px-10 py-6 h-auto font-medium text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               onClick={() => onNavigate?.('contacto')}
             >
@@ -113,7 +113,7 @@ export function CTASection({ onNavigate }: CTASectionProps) {
             </Button>
             <Button 
               variant="outline"
-              className="border-2 border-foreground hover:bg-foreground hover:text-background px-10 py-6 h-auto font-medium text-lg rounded-xl transition-all duration-300 hover:scale-105"
+              className="border-2 border-ainsa-black dark:border-ainsa-white hover:bg-ainsa-black dark:hover:bg-ainsa-white hover:text-ainsa-white dark:hover:text-ainsa-black px-10 py-6 h-auto font-medium text-lg rounded-xl transition-all duration-300 hover:scale-105"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               onClick={() => window.open('https://api.whatsapp.com/send/?phone=526624968802&text=Hola,%20me%20gustaría%20programar%20una%20reunión%20para%20discutir%20mis%20necesidades%20de%20materiales%20industriales.&type=phone_number&app_absent=0', '_blank')}
             >

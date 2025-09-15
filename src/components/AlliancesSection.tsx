@@ -33,7 +33,7 @@ export function AlliancesSection() {
   ];
 
   return (
-    <section className="py-24 lg:py-32 bg-background">
+    <section className="py-24 lg:py-32 bg-ainsa-white dark:bg-ainsa-black">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
@@ -45,25 +45,25 @@ export function AlliancesSection() {
             className="text-center mb-16"
           >
             <span 
-              className="caption text-accent bg-muted/50 px-4 py-2 rounded-full border border-border/30 mb-6 inline-block"
+              className="caption text-ainsa-red bg-ainsa-gray/10 dark:bg-ainsa-gray/20/50 px-4 py-2 rounded-full border border-ainsa-gray/30 mb-6 inline-block"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               NUESTRAS ALIANZAS
             </span>
             <h2 
-              className="text-4xl lg:text-5xl xl:text-6xl leading-tight tracking-tight text-foreground mb-6"
+              className="text-4xl lg:text-5xl xl:text-6xl leading-tight tracking-tight text-ainsa-black dark:text-ainsa-white mb-6"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
             >
               Alianzas
               <span 
-                className="block text-accent"
+                className="block text-ainsa-red"
                 style={{ fontStyle: 'italic', fontWeight: 400 }}
               >
                 Estratégicas
               </span>
             </h2>
             <p 
-              className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
+              className="text-lg lg:text-xl text-ainsa-gray leading-relaxed max-w-3xl mx-auto"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               Gracias a nuestras alianzas con fabricantes internacionales y distribuidores líderes 
@@ -91,21 +91,21 @@ export function AlliancesSection() {
                     className="flex items-start space-x-4"
                   >
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center">
-                        <div className="text-accent">
+                      <div className="w-12 h-12 bg-ainsa-red/10 rounded-xl flex items-center justify-center">
+                        <div className="text-ainsa-red">
                           {benefit.icon}
                         </div>
                       </div>
                     </div>
                     <div>
                       <h3 
-                        className="text-xl lg:text-2xl mb-2 text-foreground"
+                        className="text-xl lg:text-2xl mb-2 text-ainsa-black dark:text-ainsa-white"
                         style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                       >
                         {benefit.title}
                       </h3>
                       <p 
-                        className="text-muted-foreground leading-relaxed"
+                        className="text-ainsa-gray leading-relaxed"
                         style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                       >
                         {benefit.description}
@@ -121,23 +121,23 @@ export function AlliancesSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
                 viewport={{ once: true }}
-                className="mt-12 p-6 bg-accent/5 rounded-2xl border border-accent/20"
+                className="mt-12 p-6 bg-ainsa-red/5 rounded-2xl border border-ainsa-red/20"
               >
                 <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-8 h-8 bg-accent/20 rounded-lg flex items-center justify-center">
-                    <svg className="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-8 h-8 bg-ainsa-red/20 rounded-lg flex items-center justify-center">
+                    <svg className="w-5 h-5 text-ainsa-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                     </svg>
                   </div>
                   <h4 
-                    className="text-lg text-accent font-bold"
+                    className="text-lg text-ainsa-red font-bold"
                     style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                   >
                     Marca IRVING®
                   </h4>
                 </div>
                 <p 
-                  className="text-muted-foreground"
+                  className="text-ainsa-gray"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   Distribuidor autorizado de productos IRVING® para rejillas electroforjadas, 
@@ -174,39 +174,39 @@ export function AlliancesSection() {
             className="mt-16 text-center"
           >
             <h3 
-              className="text-2xl lg:text-3xl mb-8 text-foreground"
+              className="text-2xl lg:text-3xl mb-8 text-ainsa-black dark:text-ainsa-white"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
             >
               Fabricantes y Distribuidores Internacionales
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="flex items-center justify-center p-6 bg-muted/30 rounded-xl">
+              <div className="flex items-center justify-center p-6 bg-ainsa-gray/10 dark:bg-ainsa-gray/20/30 rounded-xl">
                 <span 
-                  className="text-muted-foreground font-medium"
+                  className="text-ainsa-gray font-medium"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   México
                 </span>
               </div>
-              <div className="flex items-center justify-center p-6 bg-muted/30 rounded-xl">
+              <div className="flex items-center justify-center p-6 bg-ainsa-gray/10 dark:bg-ainsa-gray/20/30 rounded-xl">
                 <span 
-                  className="text-muted-foreground font-medium"
+                  className="text-ainsa-gray font-medium"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   EE. UU.
                 </span>
               </div>
-              <div className="flex items-center justify-center p-6 bg-muted/30 rounded-xl">
+              <div className="flex items-center justify-center p-6 bg-ainsa-gray/10 dark:bg-ainsa-gray/20/30 rounded-xl">
                 <span 
-                  className="text-muted-foreground font-medium"
+                  className="text-ainsa-gray font-medium"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   Europa
                 </span>
               </div>
-              <div className="flex items-center justify-center p-6 bg-muted/30 rounded-xl">
+              <div className="flex items-center justify-center p-6 bg-ainsa-gray/10 dark:bg-ainsa-gray/20/30 rounded-xl">
                 <span 
-                  className="text-muted-foreground font-medium"
+                  className="text-ainsa-gray font-medium"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   Asia

@@ -41,7 +41,7 @@ export function ValuesSection() {
   ];
 
   return (
-    <section className="py-24 lg:py-32 bg-muted/30">
+    <section className="py-24 lg:py-32 bg-ainsa-gray/10 dark:bg-ainsa-gray/20">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
@@ -59,7 +59,7 @@ export function ValuesSection() {
               ¿POR QUÉ ELEGIR AINSA?
             </span>
             <h2 
-              className="text-4xl lg:text-5xl xl:text-6xl leading-tight tracking-tight text-foreground mb-6"
+              className="text-4xl lg:text-5xl xl:text-6xl leading-tight tracking-tight text-ainsa-black dark:text-ainsa-white mb-6"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
             >
               Valores
@@ -71,7 +71,7 @@ export function ValuesSection() {
               </span>
             </h2>
             <p 
-              className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
+              className="text-lg lg:text-xl text-ainsa-gray leading-relaxed max-w-3xl mx-auto"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               Lo que nos distingue en el mercado del acero inoxidable y metales industriales del noroeste de México.
@@ -102,13 +102,13 @@ export function ValuesSection() {
                   {/* Content */}
                   <div className="flex-1">
                     <h3 
-                      className="text-xl lg:text-2xl mb-3 text-foreground"
+                      className="text-xl lg:text-2xl mb-3 text-ainsa-black dark:text-ainsa-white"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                     >
                       {value.title}
                     </h3>
                     <p 
-                      className="text-muted-foreground leading-relaxed"
+                      className="text-ainsa-gray leading-relaxed"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                     >
                       {value.description}
@@ -128,7 +128,7 @@ export function ValuesSection() {
             className="text-center mt-16"
           >
             <p 
-              className="text-lg text-muted-foreground mb-8"
+              className="text-lg text-ainsa-gray mb-8"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               Descubre cómo podemos impulsar tu próximo proyecto con soluciones de calidad certificada.

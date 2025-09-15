@@ -28,7 +28,7 @@ export function ServicesOverviewSection({ onNavigate }: ServicesOverviewSectionP
           {/* Eyebrow text */}
           <div className="text-center mb-12">
             <span 
-              className="caption text-muted-foreground bg-background/80 dark:bg-background/60 px-6 py-3 rounded-full backdrop-blur-sm border border-border/30"
+              className="caption text-ainsa-gray bg-ainsa-white dark:bg-ainsa-black/80 dark:bg-ainsa-white dark:bg-ainsa-black/60 px-6 py-3 rounded-full backdrop-blur-sm border border-ainsa-gray/30"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               NUESTROS SERVICIOS
@@ -38,7 +38,7 @@ export function ServicesOverviewSection({ onNavigate }: ServicesOverviewSectionP
           {/* Main heading */}
           <div className="text-center mb-20">
             <h2 
-              className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[0.9] tracking-tight mb-8 text-foreground"
+              className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[0.9] tracking-tight mb-8 text-ainsa-black dark:text-ainsa-white"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
             >
               Soluciones Industriales
@@ -51,7 +51,7 @@ export function ServicesOverviewSection({ onNavigate }: ServicesOverviewSectionP
             </h2>
             
             <p 
-              className="text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
+              className="text-xl lg:text-2xl text-ainsa-gray leading-relaxed max-w-3xl mx-auto"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               Desde el suministro de materias primas hasta servicios especializados de corte, maquinado y distribución para la industria.
@@ -94,19 +94,19 @@ export function ServicesOverviewSection({ onNavigate }: ServicesOverviewSectionP
             ].map((service, index) => (
               <div 
                 key={index}
-                className="bg-background/80 dark:bg-background/60 backdrop-blur-sm border border-border/30 rounded-2xl p-8 hover:bg-background/90 dark:hover:bg-background/70 transition-all duration-300 hover:scale-105 group"
+                className="bg-ainsa-white dark:bg-ainsa-black/80 dark:bg-ainsa-white dark:bg-ainsa-black/60 backdrop-blur-sm border border-ainsa-gray/30 rounded-2xl p-8 hover:bg-ainsa-white dark:bg-ainsa-black/90 dark:hover:bg-ainsa-white dark:bg-ainsa-black/70 transition-all duration-300 hover:scale-105 group"
               >
                 <div className="text-4xl mb-6 group-hover:scale-110 transition-transform duration-300">
                   {service.icon}
                 </div>
                 <h3 
-                  className="text-2xl font-bold mb-4 text-foreground"
+                  className="text-2xl font-bold mb-4 text-ainsa-black dark:text-ainsa-white"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                 >
                   {service.title}
                 </h3>
                 <p 
-                  className="text-muted-foreground leading-relaxed"
+                  className="text-ainsa-gray leading-relaxed"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                 >
                   {service.description}
@@ -119,7 +119,7 @@ export function ServicesOverviewSection({ onNavigate }: ServicesOverviewSectionP
           <div className="text-center">
             <Button 
               onClick={() => onNavigate('servicios')}
-              className="bg-accent hover:bg-accent/90 text-accent-foreground px-10 py-6 h-auto font-medium text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              className="bg-ainsa-red hover:bg-ainsa-red/90 text-ainsa-red-foreground px-10 py-6 h-auto font-medium text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               Ver Todos los Servicios

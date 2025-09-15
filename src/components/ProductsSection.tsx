@@ -9,27 +9,27 @@ export function ProductsSection() {
   ];
 
   return (
-    <section id="productos" className="bg-muted/30 py-32">
+    <section id="productos" className="bg-ainsa-gray/10 dark:bg-ainsa-gray/20 py-32">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="max-w-6xl mx-auto">
           
           {/* Header */}
           <div className="text-center mb-20">
             <span 
-              className="caption text-muted-foreground mb-6 block"
+              className="caption text-ainsa-gray mb-6 block"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               NUESTROS PRODUCTOS
             </span>
             <h2 
-              className="text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight text-foreground mb-8"
+              className="text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight text-ainsa-black dark:text-ainsa-white mb-8"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
             >
               Materiales de
               <span className="block">Calidad Superior</span>
             </h2>
             <p 
-              className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed"
+              className="text-lg text-ainsa-gray max-w-2xl mx-auto leading-relaxed"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               Suministramos una amplia gama de materiales de acero inoxidable y metales especiales para todas sus necesidades industriales.
@@ -41,10 +41,10 @@ export function ProductsSection() {
             {products.map((product, index) => (
               <div
                 key={index} 
-                className="group p-8 bg-background hover:bg-card border border-border/50 hover:border-border transition-all duration-300 rounded-xl"
+                className="group p-8 bg-ainsa-white dark:bg-ainsa-black hover:bg-ainsa-gray/5 dark:hover:bg-ainsa-gray/10 border border-ainsa-gray/50 hover:border-ainsa-gray transition-all duration-300 rounded-xl"
               >
                 <h3 
-                  className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors duration-300"
+                  className="text-xl font-semibold text-ainsa-black dark:text-ainsa-white group-hover:text-ainsa-red transition-colors duration-300"
                   style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                 >
                   {product}
@@ -77,7 +77,7 @@ export function ProductsSection() {
               Contamos con una amplia red de proveedores para conseguir materiales especiales y grados específicos.
             </p>
             <button 
-              className="bg-background text-foreground px-8 py-4 rounded-lg font-medium hover:bg-background/90 transition-colors duration-300"
+              className="bg-background text-ainsa-black dark:text-ainsa-white px-8 py-4 rounded-lg font-medium hover:bg-background/90 transition-colors duration-300"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               Solicitar Cotización

@@ -66,31 +66,31 @@ export function PlacasLaminasPage({ onNavigate }: PlacasLaminasPageProps) {
   return (
     <main className="pt-20">
       {/* Page Header */}
-      <section className="py-16 lg:py-24 bg-muted/30">
+      <section className="py-16 lg:py-24 bg-ainsa-gray/10 dark:bg-ainsa-gray/20/30">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
               <span 
-                className="caption text-accent bg-background/80 px-4 py-2 rounded-full border border-border/30"
+                className="caption text-ainsa-red bg-ainsa-white dark:bg-ainsa-black/80 px-4 py-2 rounded-full border border-ainsa-gray/30"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 PRODUCTOS LAMINADOS
               </span>
             </div>
             <h1 
-              className="text-4xl lg:text-6xl xl:text-7xl leading-tight tracking-tight text-foreground mb-6"
+              className="text-4xl lg:text-6xl xl:text-7xl leading-tight tracking-tight text-ainsa-black dark:text-ainsa-white mb-6"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
             >
               Placas y Láminas
               <span 
-                className="block text-accent"
+                className="block text-ainsa-red"
                 style={{ fontStyle: 'italic', fontWeight: 400 }}
               >
                 de Acero Inoxidable
               </span>
             </h1>
             <p 
-              className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
+              className="text-lg lg:text-xl text-ainsa-gray leading-relaxed max-w-3xl mx-auto"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               La más amplia selección de placas y láminas en diferentes espesores, medidas y acabados superficiales 
@@ -117,18 +117,18 @@ export function PlacasLaminasPage({ onNavigate }: PlacasLaminasPageProps) {
       </section>
 
       {/* Specifications Section */}
-      <section className="py-16 lg:py-24 bg-muted/20">
+      <section className="py-16 lg:py-24 bg-ainsa-gray/10 dark:bg-ainsa-gray/20/20">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 
-                className="text-3xl lg:text-5xl font-bold mb-6 text-foreground"
+                className="text-3xl lg:text-5xl font-bold mb-6 text-ainsa-black dark:text-ainsa-white"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
               >
                 Especificaciones Técnicas
               </h2>
               <p 
-                className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
+                className="text-lg lg:text-xl text-ainsa-gray leading-relaxed max-w-3xl mx-auto"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 Disponibles en múltiples espesores y medidas estándar, 
@@ -140,16 +140,16 @@ export function PlacasLaminasPage({ onNavigate }: PlacasLaminasPageProps) {
               {especificaciones.map((spec, index) => (
                 <div 
                   key={index}
-                  className="bg-background border border-border/30 rounded-2xl p-8 hover:shadow-lg transition-all duration-300"
+                  className="bg-ainsa-white dark:bg-ainsa-black border border-ainsa-gray/30 rounded-2xl p-8 hover:shadow-lg transition-all duration-300"
                 >
                   <div className="mb-6">
                     <h3 
-                      className="text-2xl font-bold text-foreground mb-2"
+                      className="text-2xl font-bold text-ainsa-black dark:text-ainsa-white mb-2"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                     >
                       {spec.categoria}
                     </h3>
-                    <div className="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm inline-block">
+                    <div className="bg-ainsa-red/10 text-ainsa-red px-3 py-1 rounded-full text-sm inline-block">
                       {spec.rango}
                     </div>
                   </div>
@@ -157,13 +157,13 @@ export function PlacasLaminasPage({ onNavigate }: PlacasLaminasPageProps) {
                   <div className="space-y-4">
                     <div>
                       <h4 
-                        className="font-semibold text-foreground mb-2"
+                        className="font-semibold text-ainsa-black dark:text-ainsa-white mb-2"
                         style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 600 }}
                       >
                         Medidas Estándar:
                       </h4>
                       <p 
-                        className="text-muted-foreground text-sm"
+                        className="text-ainsa-gray text-sm"
                         style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                       >
                         {spec.medidas}
@@ -172,7 +172,7 @@ export function PlacasLaminasPage({ onNavigate }: PlacasLaminasPageProps) {
 
                     <div>
                       <h4 
-                        className="font-semibold text-foreground mb-2"
+                        className="font-semibold text-ainsa-black dark:text-ainsa-white mb-2"
                         style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 600 }}
                       >
                         Aplicaciones:
@@ -181,10 +181,10 @@ export function PlacasLaminasPage({ onNavigate }: PlacasLaminasPageProps) {
                         {spec.aplicaciones.map((app, appIndex) => (
                           <li 
                             key={appIndex}
-                            className="flex items-start space-x-2 text-muted-foreground text-sm"
+                            className="flex items-start space-x-2 text-ainsa-gray text-sm"
                             style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                           >
-                            <span className="text-accent mt-1">•</span>
+                            <span className="text-ainsa-red mt-1">•</span>
                             <span>{app}</span>
                           </li>
                         ))}
@@ -193,7 +193,7 @@ export function PlacasLaminasPage({ onNavigate }: PlacasLaminasPageProps) {
 
                     <div>
                       <h4 
-                        className="font-semibold text-foreground mb-2"
+                        className="font-semibold text-ainsa-black dark:text-ainsa-white mb-2"
                         style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 600 }}
                       >
                         Acabados:
@@ -202,7 +202,7 @@ export function PlacasLaminasPage({ onNavigate }: PlacasLaminasPageProps) {
                         {spec.acabados.map((acabado, acabadoIndex) => (
                           <span 
                             key={acabadoIndex}
-                            className="bg-muted text-muted-foreground px-2 py-1 rounded text-xs"
+                            className="bg-ainsa-gray/10 dark:bg-ainsa-gray/20 text-ainsa-gray px-2 py-1 rounded text-xs"
                             style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                           >
                             {acabado}
@@ -224,13 +224,13 @@ export function PlacasLaminasPage({ onNavigate }: PlacasLaminasPageProps) {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 
-                className="text-3xl lg:text-5xl font-bold mb-6 text-foreground"
+                className="text-3xl lg:text-5xl font-bold mb-6 text-ainsa-black dark:text-ainsa-white"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
               >
                 Acabados Superficiales
               </h2>
               <p 
-                className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
+                className="text-lg lg:text-xl text-ainsa-gray leading-relaxed max-w-3xl mx-auto"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 Cada acabado está diseñado para aplicaciones específicas, 
@@ -242,14 +242,14 @@ export function PlacasLaminasPage({ onNavigate }: PlacasLaminasPageProps) {
               {acabados.map((acabado, index) => (
                 <div 
                   key={index}
-                  className="bg-background border border-border/30 rounded-2xl p-8 hover:shadow-lg transition-all duration-300"
+                  className="bg-ainsa-white dark:bg-ainsa-black border border-ainsa-gray/30 rounded-2xl p-8 hover:shadow-lg transition-all duration-300"
                 >
                   <div className="flex items-center mb-4">
-                    <div className="bg-accent text-accent-foreground px-4 py-2 rounded-lg font-bold mr-4">
+                    <div className="bg-ainsa-red text-ainsa-red-foreground px-4 py-2 rounded-lg font-bold mr-4">
                       {acabado.tipo}
                     </div>
                     <h3 
-                      className="text-xl font-semibold text-foreground"
+                      className="text-xl font-semibold text-ainsa-black dark:text-ainsa-white"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 600 }}
                     >
                       {acabado.descripcion}
@@ -259,13 +259,13 @@ export function PlacasLaminasPage({ onNavigate }: PlacasLaminasPageProps) {
                   <div className="space-y-3">
                     <div>
                       <h4 
-                        className="font-medium text-foreground mb-1"
+                        className="font-medium text-ainsa-black dark:text-ainsa-white mb-1"
                         style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 500 }}
                       >
                         Aplicaciones:
                       </h4>
                       <p 
-                        className="text-muted-foreground text-sm"
+                        className="text-ainsa-gray text-sm"
                         style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                       >
                         {acabado.aplicaciones}
@@ -274,13 +274,13 @@ export function PlacasLaminasPage({ onNavigate }: PlacasLaminasPageProps) {
 
                     <div>
                       <h4 
-                        className="font-medium text-foreground mb-1"
+                        className="font-medium text-ainsa-black dark:text-ainsa-white mb-1"
                         style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 500 }}
                       >
                         Características:
                       </h4>
                       <p 
-                        className="text-muted-foreground text-sm"
+                        className="text-ainsa-gray text-sm"
                         style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                       >
                         {acabado.caracteristicas}
@@ -295,18 +295,18 @@ export function PlacasLaminasPage({ onNavigate }: PlacasLaminasPageProps) {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 lg:py-24 bg-muted/20">
+      <section className="py-16 lg:py-24 bg-ainsa-gray/10 dark:bg-ainsa-gray/20/20">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="max-w-4xl mx-auto">
-            <div className="bg-background border border-border/30 rounded-3xl p-12 lg:p-16 text-center">
+            <div className="bg-ainsa-white dark:bg-ainsa-black border border-ainsa-gray/30 rounded-3xl p-12 lg:p-16 text-center">
               <h2 
-                className="text-3xl lg:text-4xl font-bold mb-6 text-foreground"
+                className="text-3xl lg:text-4xl font-bold mb-6 text-ainsa-black dark:text-ainsa-white"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
               >
                 Servicios Adicionales
               </h2>
               <p 
-                className="text-lg lg:text-xl text-muted-foreground leading-relaxed mb-8"
+                className="text-lg lg:text-xl text-ainsa-gray leading-relaxed mb-8"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 Complementamos nuestro inventario con servicios especializados 
@@ -333,13 +333,13 @@ export function PlacasLaminasPage({ onNavigate }: PlacasLaminasPageProps) {
                   <div key={index} className="text-center">
                     <div className="text-4xl mb-4">{service.icon}</div>
                     <h3 
-                      className="font-semibold text-foreground mb-2"
+                      className="font-semibold text-ainsa-black dark:text-ainsa-white mb-2"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 600 }}
                     >
                       {service.title}
                     </h3>
                     <p 
-                      className="text-muted-foreground text-sm"
+                      className="text-ainsa-gray text-sm"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                     >
                       {service.description}

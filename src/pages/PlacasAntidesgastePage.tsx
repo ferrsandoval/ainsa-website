@@ -95,31 +95,31 @@ export function PlacasAntidesgastePage({ onNavigate }: PlacasAntidesgastePagePro
   return (
     <main className="pt-20">
       {/* Page Header */}
-      <section className="py-16 lg:py-24 bg-muted/30">
+      <section className="py-16 lg:py-24 bg-ainsa-gray/10 dark:bg-ainsa-gray/20/30">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
               <span 
-                className="caption text-accent bg-background/80 px-4 py-2 rounded-full border border-border/30"
+                className="caption text-ainsa-red bg-ainsa-white dark:bg-ainsa-black/80 px-4 py-2 rounded-full border border-ainsa-gray/30"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 LÍNEA DE PRODUCTOS
               </span>
             </div>
             <h1 
-              className="text-4xl lg:text-6xl xl:text-7xl leading-tight tracking-tight text-foreground mb-6"
+              className="text-4xl lg:text-6xl xl:text-7xl leading-tight tracking-tight text-ainsa-black dark:text-ainsa-white mb-6"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
             >
               Placas Antidesgaste
               <span 
-                className="block text-accent"
+                className="block text-ainsa-red"
                 style={{ fontStyle: 'italic', fontWeight: 400 }}
               >
                 y Ultra Resistentes
               </span>
             </h1>
             <p 
-              className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
+              className="text-lg lg:text-xl text-ainsa-gray leading-relaxed max-w-3xl mx-auto"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               Desarrolladas para soportar condiciones extremas en minería, construcción y maquinaria pesada. 
@@ -148,18 +148,18 @@ export function PlacasAntidesgastePage({ onNavigate }: PlacasAntidesgastePagePro
       </SectionTransition>
 
       {/* Grades Section */}
-      <section className="py-16 lg:py-24 bg-muted/20">
+      <section className="py-16 lg:py-24 bg-ainsa-gray/10 dark:bg-ainsa-gray/20/20">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
               <h2 
-                className="text-3xl lg:text-5xl font-bold mb-6 text-foreground"
+                className="text-3xl lg:text-5xl font-bold mb-6 text-ainsa-black dark:text-ainsa-white"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
               >
                 Grados Disponibles
               </h2>
               <p 
-                className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
+                className="text-lg lg:text-xl text-ainsa-gray leading-relaxed max-w-3xl mx-auto"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 Cada grado está diseñado para un nivel específico de resistencia al desgaste, 
@@ -171,25 +171,25 @@ export function PlacasAntidesgastePage({ onNavigate }: PlacasAntidesgastePagePro
               {placasData.map((placa, index) => (
                 <div 
                   key={index}
-                  className="bg-background border border-border/30 rounded-2xl p-8 hover:shadow-lg transition-all duration-300"
+                  className="bg-ainsa-white dark:bg-ainsa-black border border-ainsa-gray/30 rounded-2xl p-8 hover:shadow-lg transition-all duration-300"
                 >
                   <div className="mb-6">
                     <div className="flex items-center justify-between mb-3">
                       <h3 
-                        className="text-2xl lg:text-3xl font-bold text-foreground"
+                        className="text-2xl lg:text-3xl font-bold text-ainsa-black dark:text-ainsa-white"
                         style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                       >
                         {placa.grade}
                       </h3>
                       <span 
-                        className="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm border border-accent/20"
+                        className="bg-ainsa-red/10 text-ainsa-red px-3 py-1 rounded-full text-sm border border-ainsa-red/20"
                         style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 600 }}
                       >
                         {placa.hardness}
                       </span>
                     </div>
                     <p 
-                      className="text-muted-foreground"
+                      className="text-ainsa-gray"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                     >
                       {placa.description}
@@ -198,7 +198,7 @@ export function PlacasAntidesgastePage({ onNavigate }: PlacasAntidesgastePagePro
 
                   <div className="mb-6">
                     <h4 
-                      className="font-semibold text-foreground mb-3"
+                      className="font-semibold text-ainsa-black dark:text-ainsa-white mb-3"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 600 }}
                     >
                       Características:
@@ -207,10 +207,10 @@ export function PlacasAntidesgastePage({ onNavigate }: PlacasAntidesgastePagePro
                       {placa.characteristics.map((char, charIndex) => (
                         <li 
                           key={charIndex}
-                          className="flex items-start space-x-2 text-muted-foreground"
+                          className="flex items-start space-x-2 text-ainsa-gray"
                           style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                         >
-                          <span className="text-accent mt-1">•</span>
+                          <span className="text-ainsa-red mt-1">•</span>
                           <span>{char}</span>
                         </li>
                       ))}
@@ -219,7 +219,7 @@ export function PlacasAntidesgastePage({ onNavigate }: PlacasAntidesgastePagePro
 
                   <div>
                     <h4 
-                      className="font-semibold text-foreground mb-3"
+                      className="font-semibold text-ainsa-black dark:text-ainsa-white mb-3"
                       style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 600 }}
                     >
                       Aplicaciones Principales:
@@ -228,7 +228,7 @@ export function PlacasAntidesgastePage({ onNavigate }: PlacasAntidesgastePagePro
                       {placa.applications.map((app, appIndex) => (
                         <span 
                           key={appIndex}
-                          className="bg-muted/50 text-foreground px-3 py-1 rounded-full text-sm border border-border/30"
+                          className="bg-ainsa-gray/10 dark:bg-ainsa-gray/20/50 text-ainsa-black dark:text-ainsa-white px-3 py-1 rounded-full text-sm border border-ainsa-gray/30"
                           style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                         >
                           {app}
@@ -249,13 +249,13 @@ export function PlacasAntidesgastePage({ onNavigate }: PlacasAntidesgastePagePro
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 
-                className="text-3xl lg:text-5xl font-bold mb-6 text-foreground"
+                className="text-3xl lg:text-5xl font-bold mb-6 text-ainsa-black dark:text-ainsa-white"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
               >
                 Aplicaciones por Industria
               </h2>
               <p 
-                className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
+                className="text-lg lg:text-xl text-ainsa-gray leading-relaxed max-w-3xl mx-auto"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 Las placas antidesgaste están diseñadas para soportar las condiciones más exigentes 
@@ -267,19 +267,19 @@ export function PlacasAntidesgastePage({ onNavigate }: PlacasAntidesgastePagePro
               {applications.map((application, index) => (
                 <div 
                   key={index}
-                  className="bg-background border border-border/30 rounded-2xl p-8 hover:shadow-lg transition-all duration-300"
+                  className="bg-ainsa-white dark:bg-ainsa-black border border-ainsa-gray/30 rounded-2xl p-8 hover:shadow-lg transition-all duration-300"
                 >
                   <div className="flex items-start space-x-4">
                     <div className="text-4xl">{application.icon}</div>
                     <div className="flex-1">
                       <h3 
-                        className="text-xl font-bold text-foreground mb-2"
+                        className="text-xl font-bold text-ainsa-black dark:text-ainsa-white mb-2"
                         style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                       >
                         {application.industry}
                       </h3>
                       <p 
-                        className="text-muted-foreground mb-4"
+                        className="text-ainsa-gray mb-4"
                         style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                       >
                         {application.description}
@@ -288,7 +288,7 @@ export function PlacasAntidesgastePage({ onNavigate }: PlacasAntidesgastePagePro
                         {application.equipment.map((equipment, equipIndex) => (
                           <span 
                             key={equipIndex}
-                            className="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm border border-accent/20"
+                            className="bg-ainsa-red/10 text-ainsa-red px-3 py-1 rounded-full text-sm border border-ainsa-red/20"
                             style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                           >
                             {equipment}
@@ -305,18 +305,18 @@ export function PlacasAntidesgastePage({ onNavigate }: PlacasAntidesgastePagePro
       </section>
 
       {/* Technical Specifications */}
-      <section className="py-16 lg:py-24 bg-muted/20">
+      <section className="py-16 lg:py-24 bg-ainsa-gray/10 dark:bg-ainsa-gray/20/20">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 
-                className="text-3xl lg:text-5xl font-bold mb-6 text-foreground"
+                className="text-3xl lg:text-5xl font-bold mb-6 text-ainsa-black dark:text-ainsa-white"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
               >
                 Especificaciones Técnicas
               </h2>
               <p 
-                className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
+                className="text-lg lg:text-xl text-ainsa-gray leading-relaxed max-w-3xl mx-auto"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 Información técnica detallada para la selección correcta del material 
@@ -328,23 +328,23 @@ export function PlacasAntidesgastePage({ onNavigate }: PlacasAntidesgastePagePro
               {specifications.map((spec, index) => (
                 <div 
                   key={index}
-                  className="bg-background border border-border/30 rounded-2xl p-6 text-center"
+                  className="bg-ainsa-white dark:bg-ainsa-black border border-ainsa-gray/30 rounded-2xl p-6 text-center"
                 >
                   <div className="text-3xl mb-4">{spec.icon}</div>
                   <h3 
-                    className="text-lg font-bold text-foreground mb-2"
+                    className="text-lg font-bold text-ainsa-black dark:text-ainsa-white mb-2"
                     style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                   >
                     {spec.characteristic}
                   </h3>
                   <p 
-                    className="text-accent font-semibold mb-2"
+                    className="text-ainsa-red font-semibold mb-2"
                     style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 600 }}
                   >
                     {spec.range}
                   </p>
                   <p 
-                    className="text-sm text-muted-foreground"
+                    className="text-sm text-ainsa-gray"
                     style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                   >
                     {spec.description}
@@ -361,7 +361,7 @@ export function PlacasAntidesgastePage({ onNavigate }: PlacasAntidesgastePagePro
         <div className="container mx-auto px-6 lg:px-12">
           <div className="max-w-6xl mx-auto text-center">
             <h2 
-              className="text-3xl lg:text-5xl font-bold mb-12 text-foreground"
+              className="text-3xl lg:text-5xl font-bold mb-12 text-ainsa-black dark:text-ainsa-white"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
             >
               Beneficios Clave
@@ -387,17 +387,17 @@ export function PlacasAntidesgastePage({ onNavigate }: PlacasAntidesgastePagePro
               ].map((benefit, index) => (
                 <div 
                   key={index}
-                  className="bg-background border border-border/30 rounded-2xl p-8"
+                  className="bg-ainsa-white dark:bg-ainsa-black border border-ainsa-gray/30 rounded-2xl p-8"
                 >
                   <div className="text-4xl mb-4">{benefit.icon}</div>
                   <h3 
-                    className="text-xl font-bold text-foreground mb-3"
+                    className="text-xl font-bold text-ainsa-black dark:text-ainsa-white mb-3"
                     style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
                   >
                     {benefit.title}
                   </h3>
                   <p 
-                    className="text-muted-foreground"
+                    className="text-ainsa-gray"
                     style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
                   >
                     {benefit.description}
