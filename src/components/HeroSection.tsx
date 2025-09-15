@@ -69,7 +69,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[0.9] tracking-tight text-foreground"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[0.9] tracking-tight text-ainsa-black dark:text-ainsa-white"
             style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
           >
             Soluciones integrales en acero inoxidable
@@ -89,7 +89,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
             className="max-w-2xl lg:max-w-4xl mx-auto"
           >
             <p 
-              className="text-base sm:text-lg lg:text-xl text-accent dark:text-muted-foreground leading-relaxed"
+              className="text-base sm:text-lg lg:text-xl text-ainsa-gray leading-relaxed"
               style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
             >
               Amplio inventario, calidad certificada y entregas rápidas para la industria de Sonora y todo México.
@@ -142,13 +142,13 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
           >
             <div className="text-center py-2">
               <div 
-                className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground mb-1"
+                className="text-xl sm:text-2xl lg:text-3xl font-bold text-ainsa-black dark:text-ainsa-white mb-1"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
               >
                 100%
               </div>
               <p 
-                className="text-xs sm:text-sm text-muted-foreground uppercase tracking-wider"
+                className="text-xs sm:text-sm text-ainsa-gray uppercase tracking-wider"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 Calidad Garantizada
@@ -157,13 +157,13 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
             
             <div className="text-center py-2">
               <div 
-                className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground mb-1"
+                className="text-xl sm:text-2xl lg:text-3xl font-bold text-ainsa-black dark:text-ainsa-white mb-1"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
               >
                 500+
               </div>
               <p 
-                className="text-xs sm:text-sm text-muted-foreground uppercase tracking-wider"
+                className="text-xs sm:text-sm text-ainsa-gray uppercase tracking-wider"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 Proyectos Completados
@@ -172,13 +172,13 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
             
             <div className="text-center py-2">
               <div 
-                className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground mb-1"
+                className="text-xl sm:text-2xl lg:text-3xl font-bold text-ainsa-black dark:text-ainsa-white mb-1"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 700 }}
               >
                 ISO 9001
               </div>
               <p 
-                className="text-xs sm:text-sm text-muted-foreground uppercase tracking-wider"
+                className="text-xs sm:text-sm text-ainsa-gray uppercase tracking-wider"
                 style={{ fontFamily: '"sui-generis", sans-serif', fontWeight: 400 }}
               >
                 Certificación de Calidad
